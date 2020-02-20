@@ -6,8 +6,8 @@
 }
 
 body {
-    height: 2000px;
-    background-color: var(--lightBlueGray);
+	height: 2000px;
+	background-color: var(--lightBlueGray);
 }
 
 a:hover {
@@ -15,14 +15,14 @@ a:hover {
 }
 
 .wrapper {
-    margin: 0 auto;
-    background-color: white;
-    max-width: 1310px;
-    height: 100%;
+	margin: 0 auto;
+	background-color: white;
+	max-width: 1310px;
+	height: 100%;
 }
 
-.navbar {
-	padding: 15px;
+nav {
+	width: 100%;
 	border-bottom: 2px solid var(--lightBlueGray);
 }
 
@@ -62,10 +62,6 @@ button {
 	height: 50px;
 }
 
-.header-bottom {
-	padding: 5px;
-}
-
 .date {
 	display: none;
 }
@@ -80,9 +76,9 @@ button {
 }
 
 .nav-link {
-	margin: 0 5px;
+	flex-grow: 1;
 	color: black;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-family: var(--roboto);
 	font-weight: 700;
 }
@@ -111,22 +107,8 @@ button {
 	margin-left: 10px;
 }
 
-.hambutton {
-	display: flex;
-	width: 74px;
-	height: 100%;
-	background-image: url(./resources/menu.svg);
-	background-repeat: no-repeat;
-	background-color: transparent;
-}
-
-hambutton:active {
-	background-image: url(./resources/);
-}
-
 .nav-item {
 	display: flex;
-	padding: 4px;
 	height: 35px;
 	align-items: center;
 }
@@ -137,10 +119,6 @@ hambutton:active {
 	height: 26px;
 	width: 1px;
 	background-color: var(--lightGray);
-}
-
-.fa-bars {
-	font-size: 1.8rem;
 }
 
 .subscribe {
@@ -197,5 +175,6 @@ hambutton:active {
 	.header-top {
 		height: 95px;
 		padding: 20px 10px 15px;
+		justify-content: flex-start;
 	}
 }
