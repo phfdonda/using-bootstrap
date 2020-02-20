@@ -12,8 +12,12 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+			crossorigin="anonymous"
+		/>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
@@ -21,32 +25,55 @@
 
 	<body>
 		<!-- @navbar -->
-		<nav class="navbar navbar-dark bg-red justify-content-between  sticky-top">
-			<a class="navbar-brand">
-				<img class="news-logo img-fluid" src="./resources/Newsweek.svg" alt="newsweek logo">
-			</a>
+		<div class="header-top container-fluid mx-auto sticky-top bg-red justify-space-between row">
+			<!-- Date -->
+			<div class="date white align-self-end col-lg-3 d-lg-block">Wed, Feb 19, 2020</div>
+			<!-- Logo -->
+			<div class="logo-wrapper d-flex justify-content-lg-center col-6"><a href="#" class="brand"><img class="logo " src="./resources/newsweek-vector-logo.svg"></a></div>
 			<!-- @right-buttons-nav-->
-			<div class="right-buttons-nav title">
-			<a href="" class="sign-in">Sign In</a>
-			<a href="" class="subscribe red">Subscribe <img src="./resources/chevron.svg" alt="right arrow" class="img-fluid d-inline-block arrow-right">
-			</img>
-			</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-targeting="hambutton"
-				aria-controls="hambutton"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<i class="hambutton fas fa-bars"></i></span>
-			</button></div>
+			<div class="right-buttons-nav title d-flex align-self-end justify-content-end col-6 col-lg-3">
+				<!-- Sign In -->
+				<a href="" class="sign-in">Sign In</a>
+				<!-- Subscribe -->
+				<a href="" class="subscribe red"
+					>Subscribe
+					<img
+						src="./resources/chevron.svg"
+						alt="right arrow"
+						class="img-fluid d-inline-block arrow-right"
+					/>
+				</a>
+				<!-- Hamburger Button -->
+				<button
+					class="navbar-toggler d-md-none"
+					type="button"
+					data-toggle="collapse"
+					data-targeting="hambutton"
+					aria-controls="hambutton"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon" alt="Menu"
+						><img src="" alt="" class="hambutton"
+					/></span>
+				</button>
+			</div>
+			
+		</div>
+
+		<nav
+			class="header-bottom navbar navbar-expand-lg navbar-dark justify-content-between"
+		>
+		
+
 			<!-- @nav-link -->
-			<div class="collapse navbar-collapse" id="hambutton">
+			<div
+				class="nav-links collapse navbar-collapse"
+				id="hambutton"
+			>
 				<ul class="navbar-nav mt-lg-0">
 					<li class="nav-item">
-						<a href="#" class="nav-link">U.S.</a>
+						<a href="#" class="nav-link title">U.S.</a>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link">World</a>
@@ -79,7 +106,6 @@
 						<a href="#" class="nav-link">Weather</a>
 					</li>
 				</ul>
-		
 			</div>
 		</nav>
 	</body>
