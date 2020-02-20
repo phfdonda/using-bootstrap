@@ -8,7 +8,7 @@
 			crossorigin="anonymous"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap"
+			href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
@@ -24,89 +24,109 @@
 	</head>
 
 	<body>
-		<!-- @navbar -->
-		<div class="header-top container-fluid mx-auto sticky-top bg-red justify-space-between row">
-			<!-- Date -->
-			<div class="date white align-self-end col-lg-3 d-lg-block">Wed, Feb 19, 2020</div>
-			<!-- Logo -->
-			<div class="logo-wrapper d-flex justify-content-lg-center col-6"><a href="#" class="brand"><img class="logo " src="./resources/newsweek-vector-logo.svg"></a></div>
-			<!-- @right-buttons-nav-->
-			<div class="right-buttons-nav title d-flex align-self-end justify-content-end col-6 col-lg-3">
-				<!-- Sign In -->
-				<a href="" class="sign-in">Sign In</a>
-				<!-- Subscribe -->
-				<a href="" class="subscribe red"
-					>Subscribe
-					<img
-						src="./resources/chevron.svg"
-						alt="right arrow"
-						class="img-fluid d-inline-block arrow-right"
-					/>
-				</a>
-				<!-- Hamburger Button -->
-				<button
-					class="navbar-toggler d-md-none"
-					type="button"
-					data-toggle="collapse"
-					data-targeting="hambutton"
-					aria-controls="hambutton"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon" alt="Menu"
-						><img src="" alt="" class="hambutton"
-					/></span>
-				</button>
-			</div>
-			
-		</div>
-
-		<nav
-			class="header-bottom navbar navbar-expand-lg navbar-dark justify-content-between"
-		>
-		
-
-			<!-- @nav-link -->
+		<div class="wrapper position-relative d-block;">
+			<!-- @navbar -->
 			<div
-				class="nav-links collapse navbar-collapse"
-				id="hambutton"
+				class="header-top container-fluid mx-auto sticky-top bg-red justify-space-between row"
 			>
-				<ul class="navbar-nav mt-lg-0">
-					<li class="nav-item">
-						<a href="#" class="nav-link title">U.S.</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">World</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Business</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Tech & Science</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Culture</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Newsgeek</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Sports</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Health</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">The Debate</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Vantage</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Weather</a>
-					</li>
-				</ul>
+				<!-- Date -->
+				<div
+					class="date white roboto not-bold align-self-end col-lg-3 d-lg-block"
+				>
+					Wed, Feb 19, 2020
+				</div>
+				<!-- Logo -->
+				<div class="logo-wrapper d-flex justify-content-lg-center col-6">
+					<a href="#" class="brand"
+						><img class="logo " src="./resources/newsweek-vector-logo.svg"
+					/></a>
+				</div>
+				<!-- @right-buttons-nav-->
+				<div
+					class="right-buttons-nav title d-flex align-self-end justify-content-end col-6 col-lg-3"
+				>
+					<!-- Sign In -->
+					<a href="" class="sign-in mr-1 white">Sign In</a>
+					<!-- Subscribe -->
+					<a href="" class="subscribe red"
+						>Subscribe
+						<img
+							src="./resources/chevron.svg"
+							alt="right arrow"
+							class="img-fluid d-inline-block arrow-right"
+						/>
+					</a>
+					<!-- Hamburger Button -->
+					<button
+						class="navbar-toggler d-md-none"
+						type="button"
+						data-toggle="collapse"
+						data-targeting="hambutton"
+						aria-controls="hambutton"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon" alt="Menu"
+							><img src="" alt="" class="hambutton"
+						/></span>
+					</button>
+				</div>
 			</div>
-		</nav>
+
+			<nav
+				id="header-bottom"
+				class="navbar navbar-expand-lg justify-content-between"
+			>
+				<!-- @nav-link -->
+				<a class="nav-links collapse navbar-collapse" id="hambutton">
+					<form action="#"></form>
+					<ul class="navbar-nav mt-lg-0">
+						<li class="nav-item">
+							<a href="#" class="nav-link">U.S.</a>
+							<span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">World </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Business </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Tech & Science </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Culture </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Newsgeek </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Sports </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Health </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">The Debate </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Vantage </a
+							><span class="divisor"></span>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Weather</a>
+						</li>
+					</ul>
+				</a>
+			</nav>
+		</a>
 	</body>
 </html>
