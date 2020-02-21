@@ -71,7 +71,7 @@
 					</a>
 					<!-- Hamburger Button -->
 					<button
-						class="navbar-toggler d-md-none"
+						class="navbar-toggler d-lg-none"
 						type="button"
 						data-toggle="collapse"
 						data-target="#navbarCollapse"
@@ -85,8 +85,16 @@
 
 			<nav id="header-bottom" class="navbar py-2 px-0 navbar-expand-lg ">
 				<!-- @nav-link -->
-				<div class="nav-links collapse navbar-md-collapse ml-auto" id="navbarCollapse">
-					<ul class="navbar-nav mt-lg-0 col-10 d-flex justify-space-around">
+				<div
+					class="nav-links collapse navbar-collapse ml-auto"
+					id="navbarCollapse"
+				>
+					<form class="search-bar d-flex col-lg-2 order-lg-2" action="#">
+						<input type="search" name="" id="" />
+						<input type="button" value="" />
+					</form>
+
+					<ul class="navbar-nav mt-lg-0 col-lg-10 d-flex justify-space-around">
 						<li class="nav-item">
 							<a href="#" class="nav-link">U.S.</a>
 							<span class="divisor"></span>
@@ -129,9 +137,9 @@
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link">Weather</a>
+							<span class="divisor d-lg-none"></span>
 						</li>
 					</ul>
-					<form class="col-2" action="#">search</form>
 				</div>
 			</nav>
 		</div>

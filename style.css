@@ -21,7 +21,6 @@ a:hover {
 	height: 100%;
 }
 
-
 .navbar-toggler-icon {
 	position: absolute;
 	right: -15px;
@@ -32,13 +31,7 @@ a:hover {
 	background-image: url(./resources/menu.svg);
 	background-position: center;
 	background-size: 30px 30px;
-
 	opacity: 0.6;
-}
-
-nav {
-	width: 100%;
-	border-bottom: 2px solid var(--lightBlueGray);
 }
 
 .navbar-toggler:focus {
@@ -115,7 +108,7 @@ nav {
 }
 
 .arrow-right {
-	width: 14px;border-bottom
+	width: 14px;
 	height: 14px;
 	align-self: center;
 	margin-left: 10px;
@@ -125,13 +118,6 @@ nav {
 	display: flex;
 	height: 35px;
 	align-items: center;
-}
-
-.nav-links {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 205px;
 }
 
 .nav-item:hover {
@@ -147,9 +133,7 @@ nav {
 }
 
 .arrow {
-	
 	background-image: url(./resources/chevronRed.svg);
-
 }
 
 .nav-item:hover .divisor {
@@ -214,6 +198,15 @@ nav {
 		height: 60px;
 	}
 
+	nav {
+		width: 100%;
+		border-bottom: 2px solid var(--lightBlueGray);
+	}
+
+	.search-bar {
+		display: inline-flex;
+	}
+
 	.right-buttons-nav {
 		padding-right: 0;
 	}
@@ -244,24 +237,4 @@ nav {
 		justify-content: flex-start;
 	}
 
-	.navbarCollapse {
-		position: absolute;
-		top: 54px;
-		right: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-bottom: 15px;
-		width: 100%;
-		transition: all 0.3s ease;
-		display: block;
-	}
-	.navbarCollapse.collapsing {
-		height: auto !important;
-		margin-right: 50%;
-		transition: all 0.3s ease;
-		display: block;
-	}
-	.navbarCollapse.show {
-		right: 0;
-	}
 }
