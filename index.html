@@ -12,6 +12,21 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
@@ -36,50 +51,42 @@
 					Wed, Feb 19, 2020
 				</div>
 				<!-- Logo -->
-				<div class="logo-wrapper d-flex justify-content-lg-center col-6">
+				<div
+					class="logo-wrapper d-flex pl-0 justify-content-lg-center col-4 col-lg-6"
+				>
 					<a href="#" class="brand"
 						><img class="logo " src="./resources/newsweek-vector-logo.svg"
 					/></a>
 				</div>
 				<!-- @right-buttons-nav-->
 				<div
-					class="right-buttons-nav title d-flex align-self-end justify-content-end col-6 col-lg-3"
+					class="right-buttons-nav title d-flex align-self-end justify-content-end col-8 col-lg-3"
 				>
 					<!-- Sign In -->
 					<a href="" class="sign-in mr-1 white">Sign In</a>
 					<!-- Subscribe -->
 					<a href="" class="subscribe red"
 						>Subscribe
-						<img
-							src="./resources/chevron.svg"
-							alt="right arrow"
-							class="img-fluid d-inline-block arrow-right"
-						/>
+						<span class="arrow align-self-center ml-2"></span>
 					</a>
 					<!-- Hamburger Button -->
 					<button
 						class="navbar-toggler d-md-none"
 						type="button"
 						data-toggle="collapse"
-						data-targeting="hambutton"
-						aria-controls="hambutton"
+						data-target="#navbarCollapse"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon" alt="Menu"
-							><img src="" alt="" class="hambutton"
-						/></span>
+						<span class="navbar-toggler-icon" alt="Menu"></span>
 					</button>
 				</div>
 			</div>
 
-			<nav
-				id="header-bottom"
-				class="navbar py-2 px-0 navbar-expand-lg "
-			>
+			<nav id="header-bottom" class="navbar py-2 px-0 navbar-expand-lg ">
 				<!-- @nav-link -->
-				<a class="nav-links collapse navbar-md-collapse" id="hambutton">
-					<ul class="navbar-nav mt-lg-0 col-10">
+				<div class="nav-links collapse navbar-md-collapse ml-auto" id="navbarCollapse">
+					<ul class="navbar-nav mt-lg-0 col-10 d-flex justify-space-around">
 						<li class="nav-item">
 							<a href="#" class="nav-link">U.S.</a>
 							<span class="divisor"></span>
@@ -125,7 +132,7 @@
 						</li>
 					</ul>
 					<form class="col-2" action="#">search</form>
-				</a>
+				</div>
 			</nav>
 		</div>
 	</body>
