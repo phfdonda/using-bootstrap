@@ -23,6 +23,7 @@ a:hover {
 
 .navbar-nav {
 	max-height: 46px;
+	padding: 5px ;
 }
 
 .navbar-toggler-icon {
@@ -229,12 +230,18 @@ input:focus {
 	.nav-item,
 	.divisor {
 		margin: 0 auto;
+		white-space: nowrap;
 	}
 
 	#search {
 		width: 84px;
 	}
 
+	.search-bar {
+		display: inline-flex;
+		position: absolute;
+		right: 102px;
+	}
 
 	.search-bar:focus {
 		width: 1200px;
@@ -244,18 +251,12 @@ input:focus {
 		max-width: 100%;
 	}
 
-	.search-bar {
-		display: inline-flex;
-	}
-
-	
 	.search-icon {
 		width: 25px;
 		height: 25px;
 		background-image: url(./resources/icon-search-glass.svg);
 		background-size: 25px 25px;
 		background-position: center;
-		margin: 0;
 	}
 
 	.right-buttons-nav {
