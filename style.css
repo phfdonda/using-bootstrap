@@ -1,17 +1,21 @@
 :root {
 	--color-red: #f72210;
+	--in-categ-name: bold 17px/16px "Roboto Condensed", sans-serif;
 	--roboto: "Roboto Condensed", sans-serif;
 	--lightGray: #d9d9d9;
 	--lightBlueGray: #f4f5f6;
+	--mediumGray: rgba(3, 3, 3, 0.4);
 }
 
 body {
 	height: 2000px;
 	background-color: var(--lightBlueGray);
+	font-size: 13px;
 }
 
-a:hover {
-	color: var(--color-red);
+img {
+	width: 100%;
+	height: auto;
 }
 
 .wrapper {
@@ -21,13 +25,17 @@ a:hover {
 	height: 100%;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+}
+
 .navbar-nav {
 	max-height: 46px;
-	padding: 5px ;
+	padding: 5px;
+
 }
 
 .navbar-toggler-icon {
-	position: absolute;
 	right: -15px;
 	top: -15px;
 	width: 74px;
@@ -45,7 +53,8 @@ input:focus {
 	border: none;
 }
 
-.roboto {
+.title,
+.in-categ-name {
 	font-family: var(--roboto);
 	font-weight: 700;
 }
@@ -54,16 +63,8 @@ input:focus {
 	font-weight: 400;
 }
 
-.black {
-	color: black;
-}
-
 .bg-red {
 	background-color: var(--color-red);
-}
-
-.red {
-	color: var(--color-red);
 }
 
 .row {
@@ -88,12 +89,12 @@ input:focus {
 	text-transform: capitalize;
 }
 
-.white {
-	color: white;
+.title {
+	font-weight: 700;
+	font-family: var(--roboto);
 }
 
 .nav-link {
-	color: black;
 	font-size: 1.2rem;
 	font-family: var(--roboto);
 	font-weight: 700;
@@ -105,7 +106,6 @@ input:focus {
 .brand {
 	width: 131px;
 	height: 20px;
-	position: relative;
 	flex-shrink: 0;
 }
 
@@ -142,20 +142,14 @@ input:focus {
 	background-image: url(./resources/chevronRed.svg);
 }
 
-.nav-item:hover .divisor {
-	background-image: url(./resources/chevronRed.svg);
-}
-
-.nav-item:hover .nav-link {
-	color: white;
-}
-
 .divisor {
 	width: 14px;
 	height: 14px;
 	background-image: url(./resources/chevronGray.svg);
 	background-size: 14px 14px;
 	background-position: center;
+	display: inline-block;
+	z-index: 2;
 }
 
 .subscribe {
@@ -164,14 +158,9 @@ input:focus {
 	height: 26px;
 }
 
-.subscribe:hover {
-	color: var(--color-red);
-}
-
 .sign-in,
 .subscribe {
 	padding: 2px 8px;
-	position: relative;
 	top: -3px;
 	right: 10px;
 	text-transform: uppercase;
@@ -180,8 +169,8 @@ input:focus {
 	font-size: 1.1rem;
 }
 
-.sign-in:hover {
-	color: white;
+.nav-item:hover .divisor {
+	background-image: url(./resources/chevronRed.svg);
 }
 
 .sign-in:hover,
@@ -193,9 +182,69 @@ input:focus {
 	height: 20px;
 }
 
-.disable-hover {
-	pointer-events: none;
-	cursor: pointer;
+.section-name {
+	color: var(--mediumGray);
+	font: bold 16px/16px "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+}
+
+.article {
+	margin: 0 15px;
+	border: none;
+}
+
+.summary {
+	
+}
+
+.in-categ-name {
+	padding: 8px 15px 9px;
+	font: var(--in-categ-name);
+	background-color: var(--lightBlueGray);
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+}
+
+.absolute,
+.in-categ-name,
+.navbar-toggler-icon {
+	position: absolute;
+}
+
+.relative,
+.sign-in,
+.subscribe,
+.brand,
+.article-img-wrapper {
+	position: relative;
+}
+
+.white,
+.sign-in:hover,
+.nav-item:hover .nav-link {
+	color: white;
+}
+
+.black,
+.title,
+.nav-link {
+	color: black;
+}
+
+.red,
+.in-categ-name,
+.subscribe:hover,
+a:hover {
+	color: var(--color-red);
+}
+
+@media only screen and (min-width: 768px){
+
+.summary {
+	font-size: 15px;
+}
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -229,7 +278,7 @@ input:focus {
 
 	.nav-item,
 	.divisor {
-		margin: 0 auto;
+		/* margin: 0 auto; */
 		white-space: nowrap;
 	}
 
@@ -264,6 +313,7 @@ input:focus {
 	}
 
 	.divisor {
+		display: inline-block;
 		height: 26px;
 		width: 1px;
 		background-color: var(--lightGray);
