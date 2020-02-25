@@ -233,6 +233,10 @@ article {
 	padding-top: 20px;
 }
 
+#header-bottom {
+	margin-bottom: 0;
+}
+
 .in-categ-name {
 	text-transform: uppercase;
 	padding: 8px 15px 9px;
@@ -280,13 +284,6 @@ a:hover {
 	.summary {
 		font-size: 15px;
 	}
-}
-
-@media only screen and (min-width: 992px) {
-	.brand {
-		width: 395px;
-		height: 60px;
-	}
 
 	.wrapper {
 		background-color: white;
@@ -294,6 +291,13 @@ a:hover {
 
 	.column {
 		border: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.brand {
+		width: 395px;
+		height: 60px;
 	}
 
 	nav {
