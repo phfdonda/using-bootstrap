@@ -32,7 +32,7 @@ Three vertical columns. Left one is "Featured Stories"(**featured-column**). Mid
 
 It takes at this screen-size 41% of the width of the page. It contains only one subsection, **featured-stories-subsec**.
 
-##### Second column - "top-and-more-column"
+##### Second column - "top-cult-more-column"
 
 It takes at this screen-size 59% of the width of the page. Has three sub-sections inside, in this order: "Top Story" (**top-stories-subsec**), "Culture & Travel" (**culture-subsec**), "More Stories" (**more-stories-subsec**)
 

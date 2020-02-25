@@ -8,21 +8,25 @@
 }
 
 body {
-	height: 2000px;
+	height: 1500px;
 	background-color: var(--lightBlueGray);
 	font-size: 13px;
+	overflow-x: hidden;
+}
+
+h5 {
+	font-size: 22px;
 }
 
 img {
+	max-width: 686px;
 	width: 100%;
 	height: auto;
 }
 
 .wrapper {
 	margin: 0 auto;
-	background-color: white;
 	max-width: 1310px;
-	height: 100%;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -32,7 +36,6 @@ img {
 .navbar-nav {
 	max-height: 46px;
 	padding: 5px;
-
 }
 
 .navbar-toggler-icon {
@@ -87,11 +90,6 @@ input:focus {
 .title,
 .nav-item {
 	text-transform: capitalize;
-}
-
-.title {
-	font-weight: 700;
-	font-family: var(--roboto);
 }
 
 .nav-link {
@@ -186,18 +184,57 @@ input:focus {
 	color: var(--mediumGray);
 	font: bold 16px/16px "Roboto Condensed", sans-serif;
 	text-transform: uppercase;
+	margin-left: 15px;
 }
 
-.article {
-	margin: 0 15px;
+article {
 	border: none;
 }
 
-.summary {
-	
+.article-img-wrapper {
+	object-fit: cover;
+}
+
+.sml-article::before,
+.sml-article::after,
+.end-of-section::before {
+	display: inline-block;
+	content: "";
+	border-top: 1px solid var(--lightGray);
+	width: 100%;
+	justify-content: center;
+}
+
+.sml-article::before,
+.end-of-section::before {
+	margin-bottom: 10px;
+}
+
+.sml-article::after {
+	margin-top: 20px;
+}
+
+.sml-article img {
+	width: 95px;
+	height: 95px;
+	margin-right: 10px;
+	float: left;
+}
+
+.title-sml {
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.column {
+	background-color: white;
+	border-bottom: 1px solid var(--lightGray);
+	margin-bottom: 20px;
+	padding-top: 20px;
 }
 
 .in-categ-name {
+	text-transform: uppercase;
 	padding: 8px 15px 9px;
 	font: var(--in-categ-name);
 	background-color: var(--lightBlueGray);
@@ -239,18 +276,24 @@ a:hover {
 	color: var(--color-red);
 }
 
-@media only screen and (min-width: 768px){
-
-.summary {
-	font-size: 15px;
-}
-
+@media only screen and (min-width: 768px) {
+	.summary {
+		font-size: 15px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
 	.brand {
 		width: 395px;
 		height: 60px;
+	}
+
+	.wrapper {
+		background-color: white;
+	}
+
+	.column {
+		border: none;
 	}
 
 	nav {
@@ -335,5 +378,9 @@ a:hover {
 		height: 95px;
 		padding: 20px 10px 15px;
 		justify-content: flex-start;
+	}
+
+	#header-bottom {
+		margin-bottom: 20px;
 	}
 }
