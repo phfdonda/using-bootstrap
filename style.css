@@ -5,6 +5,7 @@
 	--lightGray: #d9d9d9;
 	--lightBlueGray: #f4f5f6;
 	--mediumGray: rgba(3, 3, 3, 0.4);
+	--darkGray: #555555;
 }
 
 body {
@@ -171,9 +172,17 @@ input:focus {
 	background-image: url(./resources/chevronRed.svg);
 }
 
+.opinion::after {
+}
+
 .sign-in:hover,
-.subscribe:hover {
+.subscribe:hover,
+.opinion-title:hover {
 	text-decoration: none;
+}
+
+.opinion-title {
+	font-size: 1rem;
 }
 
 .news-logo {
@@ -197,7 +206,8 @@ article {
 
 .sml-article::before,
 .sml-article::after,
-.end-of-section::before {
+.end-of-section::before,
+.opinion::after {
 	display: inline-block;
 	content: "";
 	border-top: 1px solid var(--lightGray);
@@ -219,6 +229,14 @@ article {
 	height: 95px;
 	margin-right: 10px;
 	float: left;
+}
+
+.opinion img {
+	width: 63px;
+	height: 63px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 100%;
 }
 
 .title-sml {
@@ -337,6 +355,14 @@ a:hover {
 		display: inline-flex;
 		position: absolute;
 		right: 102px;
+	}
+
+	.author {
+		font-family: var(--roboto);
+		font-size: 14px;
+		text-transform: uppercase;
+		color: var(--darkGray);
+		font-weight: 700;
 	}
 
 	.search-bar:focus {
