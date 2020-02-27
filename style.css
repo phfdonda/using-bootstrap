@@ -2,6 +2,7 @@
 	--color-red: #f72210;
 	--in-categ-name: bold 17px/16px "Roboto Condensed", sans-serif;
 	--roboto: "Roboto Condensed", sans-serif;
+	--lora: "Lora", serif;
 	--lightGray: #d9d9d9;
 	--lightBlueGray: #f4f5f6;
 	--mediumGray: rgba(3, 3, 3, 0.4);
@@ -23,6 +24,18 @@ img {
 	max-width: 686px;
 	width: 100%;
 	height: auto;
+}
+
+.gray-line {
+	position: relative;
+	height: 1px;
+	background-color: var(--lightGray);
+	width: 100%;
+	margin: 2px 0;
+}
+
+.no-decoration {
+	text-decoration: none;
 }
 
 .wrapper {
@@ -63,12 +76,20 @@ input:focus {
 	font-weight: 700;
 }
 
-.not-bold {
-	font-weight: 400;
+.bold {
+	font-weight: 700;
 }
 
 .bg-red {
 	background-color: var(--color-red);
+}
+
+.roboto {
+	font-family: var(--roboto);
+}
+
+.author {
+	font-size: 0.9rem;
 }
 
 .row {
@@ -172,11 +193,9 @@ input:focus {
 	background-image: url(./resources/chevronRed.svg);
 }
 
-.opinion::after {
-}
-
 .sign-in:hover,
 .subscribe:hover,
+.culture-travel a,
 .opinion-title:hover {
 	text-decoration: none;
 }
@@ -204,7 +223,6 @@ article {
 	object-fit: cover;
 }
 
-.sml-article::before,
 .sml-article::after,
 .end-of-section::before,
 .opinion::after {
@@ -229,14 +247,6 @@ article {
 	height: 95px;
 	margin-right: 10px;
 	float: left;
-}
-
-.opinion img {
-	width: 63px;
-	height: 63px;
-	float: left;
-	margin-right: 10px;
-	border-radius: 100%;
 }
 
 .title-sml {
@@ -265,6 +275,107 @@ article {
 	left: 0;
 }
 
+.opinion {
+	width: 100%;
+}
+
+.round-img {
+	position: absolute;
+	width: 63px;
+	height: 63px;
+	border-radius: 100%;
+}
+
+.debate-pink .article-body {
+	border-top: 4px solid #f94859;
+}
+
+.debate-blue .article-body {
+	border-top: 4px solid #1d87fb;
+}
+
+.author-debate {
+	padding-bottom: 40px;
+}
+
+.author-debate .round-img {
+	right: 10px;
+	top: -5px;
+}
+
+.debate-vs {
+	height: 60px;
+	width: 100%;
+	justify-content: center;
+}
+
+.vs-img {
+	width: 40px;
+	height: 40px;
+	align-self: center;
+	background-color: black;
+	color: var(--lightGray);
+	justify-content: center;
+}
+
+.vs {
+	align-self: center;
+}
+
+.the-debate .article-img-sml {
+	position: absolute;
+	width: 95px;
+	height: 95px;
+}
+
+.the-debate .title {
+	display: inline-flex;
+	height: 95px;
+	margin-left: 110px;
+	align-items: center;
+}
+
+.culture-travel {
+	background-color: var(--lightBlueGray);
+}
+
+.culture-travel .title {
+	font-weight: 400;
+	font-family: --lora;
+	color: #272727;
+}
+
+.culture-travel p {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	color: rgba(39, 39, 39, 0.5);
+}
+
+.culture-travel .in-categ-name {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 0.6rem;
+	text-transform: capitalize;
+	padding: 0 6px;
+	color: black;
+	background-color: #c2d4d7;
+}
+
+.opinion span {
+	font-family: var(--roboto);
+	font-size: 14px;
+	text-transform: uppercase;
+	color: var(--darkGray);
+	font-weight: 700;
+}
+
+.opinion-text {
+	display: inline-block;
+	height: 100%;
+	margin-left: 75px;
+}
+
 .absolute,
 .in-categ-name,
 .navbar-toggler-icon {
@@ -275,7 +386,8 @@ article {
 .sign-in,
 .subscribe,
 .brand,
-.article-img-wrapper {
+.article-img-wrapper,
+.author-debate {
 	position: relative;
 }
 
@@ -355,14 +467,6 @@ a:hover {
 		display: inline-flex;
 		position: absolute;
 		right: 102px;
-	}
-
-	.author {
-		font-family: var(--roboto);
-		font-size: 14px;
-		text-transform: uppercase;
-		color: var(--darkGray);
-		font-weight: 700;
 	}
 
 	.search-bar:focus {
