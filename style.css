@@ -7,6 +7,7 @@
 	--lightBlueGray: #f4f5f6;
 	--mediumGray: rgba(3, 3, 3, 0.4);
 	--darkGray: #555555;
+	--blackGray: #333;
 }
 
 body {
@@ -26,12 +27,20 @@ img {
 	height: auto;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .gray-line {
 	position: relative;
 	height: 1px;
 	background-color: var(--lightGray);
 	width: 100%;
 	margin: 2px 0;
+}
+
+.red-on-hover:hover {
+	color: red;
 }
 
 .no-decoration {
@@ -82,6 +91,18 @@ input:focus {
 
 .bg-red {
 	background-color: var(--color-red);
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.blackGray {
+	color: var(--blackGray);
+}
+
+.mdGray {
+	color: var(--mediumGray);
 }
 
 .roboto {
@@ -159,7 +180,17 @@ input:focus {
 }
 
 .arrow {
+	display: inline-block;
 	background-image: url(./resources/chevronRed.svg);
+}
+
+.arrow-gray {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-size: 14px 14px;
+	background-position: center;
+	background-image: url(./resources/chevronGray.svg);
 }
 
 .divisor {
@@ -173,9 +204,22 @@ input:focus {
 }
 
 .subscribe {
-	display: flex;
-	background-color: #fff;
+	background-color: white;
 	height: 26px;
+}
+
+.subscribe:hover {
+	background-color: white;
+}
+
+.sign-up {
+	background-color: rgb(102, 102, 102);
+	height: 26px;
+}
+
+.sign-up:hover {
+	background-color: #999;
+	
 }
 
 .sign-in,
@@ -209,7 +253,6 @@ input:focus {
 }
 
 .section-name {
-	color: var(--mediumGray);
 	font: bold 16px/16px "Roboto Condensed", sans-serif;
 	text-transform: uppercase;
 	margin-left: 15px;
@@ -223,9 +266,8 @@ article {
 	object-fit: cover;
 }
 
-.sml-article::after,
-.end-of-section::before,
-.opinion::after {
+.opinion::after,
+.sml-article::after {
 	display: inline-block;
 	content: "";
 	border-top: 1px solid var(--lightGray);
@@ -233,13 +275,17 @@ article {
 	justify-content: center;
 }
 
-.sml-article::before,
-.end-of-section::before {
-	margin-bottom: 10px;
+.sml-article {
+	margin: 0;
+	min-height: 95px;
+	position: relative;
+	display: block;
 }
 
-.sml-article::after {
-	margin-top: 20px;
+.sml-article::before,
+.end-of-section::before {
+	clear: both;
+	margin-bottom: 10px;
 }
 
 .sml-article img {
@@ -254,11 +300,21 @@ article {
 	line-height: 20px;
 }
 
+.title-md {
+	font-size: 19px;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
 .column {
+	width: 100%;
 	background-color: white;
 	border-bottom: 1px solid var(--lightGray);
 	margin-bottom: 20px;
 	padding-top: 20px;
+	justify-content: center;
 }
 
 #header-bottom {
@@ -355,9 +411,9 @@ article {
 .culture-travel .in-categ-name {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	text-transform: capitalize;
-	padding: 0 6px;
+	padding: 1px 6px;
 	color: black;
 	background-color: #c2d4d7;
 }
@@ -376,6 +432,24 @@ article {
 	margin-left: 75px;
 }
 
+.latest-news a:hover {
+	text-decoration: none;
+}
+
+.cta {
+	height: 161px;
+	width: 300px;
+	padding: 20px;
+	background-color: var(--lightBlueGray);
+	border: 1px solid #e5e5e5;
+}
+
+.n-logo {
+	align-self: center;
+	width: 29px;
+	height: 28px;
+}
+
 .absolute,
 .in-categ-name,
 .navbar-toggler-icon {
@@ -392,22 +466,26 @@ article {
 }
 
 .white,
+.white-on-hover:hover,
 .sign-in:hover,
 .nav-item:hover .nav-link {
 	color: white;
 }
 
-.black,
-.title,
-.nav-link {
+.black {
 	color: black;
 }
 
 .red,
 .in-categ-name,
-.subscribe:hover,
-a:hover {
+.subscribe:hover {
 	color: var(--color-red);
+}
+
+.und-red-on-hover:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--color-red);
+	
 }
 
 @media only screen and (min-width: 768px) {
