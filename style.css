@@ -1,6 +1,6 @@
 :root {
 	--color-red: #f72210;
-	--in-categ-name: bold 17px/16px "Roboto Condensed", sans-serif;
+	--in-tag: bold 17px/16px "Roboto Condensed", sans-serif;
 	--roboto: "Roboto Condensed", sans-serif;
 	--lora: "Lora", serif;
 	--lightGray: #d9d9d9;
@@ -8,6 +8,7 @@
 	--mediumGray: rgba(3, 3, 3, 0.4);
 	--darkGray: #555555;
 	--blackGray: #333;
+	--gray: rgb(85, 85, 85);
 }
 
 body {
@@ -37,10 +38,6 @@ a:hover {
 	background-color: var(--lightGray);
 	width: 100%;
 	margin: 2px 0;
-}
-
-.red-on-hover:hover {
-	color: red;
 }
 
 .no-decoration {
@@ -80,33 +77,14 @@ input:focus {
 }
 
 .title,
-.in-categ-name {
+.tag {
 	font-family: var(--roboto);
 	font-weight: 700;
 }
 
-.bold {
-	font-weight: 700;
-}
-
-.bg-red {
-	background-color: var(--color-red);
-}
-
-.bg-white {
-	background-color: white;
-}
-
-.blackGray {
-	color: var(--blackGray);
-}
-
-.mdGray {
-	color: var(--mediumGray);
-}
-
-.roboto {
-	font-family: var(--roboto);
+.bottom-tags {
+	width: 100%;
+	height: 40px;
 }
 
 .author {
@@ -181,16 +159,22 @@ input:focus {
 
 .arrow {
 	display: inline-block;
-	background-image: url(./resources/chevronRed.svg);
-}
-
-.arrow-gray {
-	display: inline-block;
 	width: 14px;
 	height: 14px;
 	background-size: 14px 14px;
 	background-position: center;
+}
+
+.a-red {
+	background-image: url(./resources/chevronRed.svg);
+}
+
+.a-gray {
 	background-image: url(./resources/chevronGray.svg);
+}
+
+.a-black {
+	background-image: url(./resources/chevronBlack.svg);
 }
 
 .divisor {
@@ -204,7 +188,6 @@ input:focus {
 }
 
 .subscribe {
-	background-color: white;
 	height: 26px;
 }
 
@@ -224,7 +207,7 @@ input:focus {
 }
 
 .sign-up:hover {
-	background-color: #999;	
+	background-color: #999;
 }
 
 .sign-in,
@@ -326,25 +309,42 @@ article {
 	margin-bottom: 0;
 }
 
-.in-categ-name {
+.tag {
 	text-transform: uppercase;
-	padding: 8px 15px 9px;
-	font: var(--in-categ-name);
-	background-color: var(--lightBlueGray);
+	font: var(--in-tag);
 	z-index: 5;
+}
+
+.slide {
+	position: relative;
+	width: 70px;
+	height: 52px;
+	background-position: center;
+	background-size: 70px 52px;
+	background-image: url(./resources/icon-slideshows-nw.png);
+}
+
+.n-slides {
+	position: absolute;
+	width: 25px;
+	height: 15px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	right: 18px;
+	bottom: 15px;
+	font-size: 20px;
+}
+
+.in- {
+	position: absolute;
+	padding: 8px 15px 9px;
 	bottom: 0;
 	left: 0;
+	background-color: var(--lightBlueGray);
 }
 
 .opinion {
 	width: 100%;
-}
-
-.round-img {
-	position: absolute;
-	width: 63px;
-	height: 63px;
-	border-radius: 100%;
 }
 
 .debate-pink .article-body {
@@ -357,11 +357,6 @@ article {
 
 .author-debate {
 	padding-bottom: 40px;
-}
-
-.author-debate .round-img {
-	right: 10px;
-	top: -5px;
 }
 
 .debate-vs {
@@ -413,7 +408,7 @@ article {
 	color: rgba(39, 39, 39, 0.5);
 }
 
-.culture-travel .in-categ-name {
+.culture-travel .tag {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 0.8rem;
@@ -455,8 +450,48 @@ article {
 	height: 28px;
 }
 
+/* MODIFIERS */
+
+.bold {
+	font-weight: 700;
+}
+
+.gray {
+	color: var(--gray);
+}
+
+.opinion-img {
+	width: 63px;
+	height: 63px;
+}
+
+.round-img {
+	position: absolute;
+	border-radius: 100%;
+}
+
+.bg-red {
+	background-color: var(--color-red);
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.blackGray {
+	color: var(--blackGray);
+}
+
+.mdGray {
+	color: var(--mediumGray);
+}
+
+.roboto {
+	font-family: var(--roboto);
+}
+
 .absolute,
-.in-categ-name,
+.in-,
 .navbar-toggler-icon {
 	position: absolute;
 }
@@ -472,25 +507,27 @@ article {
 
 .white,
 .white-on-hover:hover,
-.sign-in:hover,
 .nav-item:hover .nav-link {
 	color: white;
 }
 
-.black {
+.black,
+.black-on-hover:hover {
 	color: black;
 }
 
 .red,
-.in-categ-name,
-.subscribe:hover {
+.red-on-hover:hover {
 	color: var(--color-red);
 }
 
+.author-debate .round-img {
+	right: 10px;
+	top: -5px;
+}
 .und-red-on-hover:hover {
 	text-decoration: underline;
 	text-decoration-color: var(--color-red);
-	
 }
 
 @media only screen and (min-width: 768px) {
