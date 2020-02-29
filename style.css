@@ -177,6 +177,10 @@ input:focus {
 	background-image: url(./resources/chevronBlack.svg);
 }
 
+.a-white {
+	background-image: url(./resources/chevronWhite.svg);
+}
+
 .divisor {
 	width: 14px;
 	height: 14px;
@@ -450,6 +454,52 @@ article {
 	height: 28px;
 }
 
+.last-issues {
+	position: relative;
+	width: 538px;
+	height: 476px;
+}
+
+.issue {
+	width: 170px;
+	height: 227px;
+}
+
+.feb {
+	z-index: 3;
+	top: 20px;
+	left: 40px;
+}
+
+.march {
+	z-index: 4;
+	top: 40px;
+	left: -40px;
+}
+
+.issue-covers {
+	height: 280px;
+	width: 100%;
+}
+
+.offer-descript {
+	font-size: 0.9rem;
+}
+
+.btn-block {
+	height: 50px;
+}
+
+.sub-btn {
+	height: 40px;
+}
+
+.starting-page {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+
 /* MODIFIERS */
 
 .bold {
@@ -470,8 +520,20 @@ article {
 	border-radius: 100%;
 }
 
+.bg-lightBlueGray {
+	background-color: var(--lightBlueGray);
+}
+
+.bg-black {
+	background-color: black;
+}
+
 .bg-red {
 	background-color: var(--color-red);
+}
+
+.bg-red-on-hover:hover {
+	background-color: #de1f0e;
 }
 
 .bg-white {
