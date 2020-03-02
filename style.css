@@ -500,10 +500,72 @@ article {
 	object-fit: cover;
 }
 
+
+.logo-bottom {
+	width: 236px;
+	height: 36px;
+}
+
+
+.icon {
+	width: 26px;
+	height: 24px;
+	background-size: 26px 24px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 5px;
+}
+
+.facebook {
+	background-image: url(./resources/facebook-gray.svg);
+}
+
+.facebook:hover {
+	background-image: url(./resources/facebook.svg);
+}
+
+.twitter {
+	background-image: url(./resources/twitter-gray.svg);
+}
+
+.twitter:hover {
+	background-image: url(./resources/twitter.svg);
+}
+
+.instagram {
+	background-image: url(./resources/instagram-gray.svg);
+}
+
+.instagram:hover {
+	background-image: url(./resources/instagram.svg);
+}
+
+.tumblr {
+	background-image: url(./resources/tumblr-gray.svg);
+}
+
+.tumblr:hover {
+	background-image: url(./resources/tumblr.svg);
+}
+
+.linkedin {
+	background-image: url(./resources/linkedin-gray.svg);
+}
+
+.linkedin:hover {
+	background-image: url(./resources/linkedin.svg);
+}
+
+
 /* MODIFIERS */
 
 .bold {
 	font-weight: 700;
+}
+
+.link-sml {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .gray {
