@@ -456,8 +456,8 @@ article {
 
 .last-issues {
 	position: relative;
-	width: 538px;
-	height: 476px;
+	width: 260px;
+	height: 241px;
 }
 
 .issue {
@@ -465,16 +465,16 @@ article {
 	height: 227px;
 }
 
-.feb {
+.last-issue {
 	z-index: 3;
-	top: 20px;
-	left: 40px;
+	top: 0;
+	left: 0;
 }
 
-.march {
+.current-issue {
 	z-index: 4;
-	top: 40px;
-	left: -40px;
+	bottom: 0;
+	right: 0;
 }
 
 .issue-covers {
