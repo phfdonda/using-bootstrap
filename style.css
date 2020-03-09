@@ -47,6 +47,7 @@ a:hover {
 .wrapper {
 	margin: 0 auto;
 	max-width: 1310px;
+	min-width: 400px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -314,9 +315,9 @@ article {
 
 .white-filler {
 	width: 100%;
-	height: auto;
-	min-height: 370px;
-	max-height: 540px;
+	min-height: 30px;
+	max-height: 50px;
+
 }
 
 
