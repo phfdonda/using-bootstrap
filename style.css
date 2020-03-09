@@ -300,6 +300,19 @@ article {
 	text-transform: uppercase;
 }
 
+.top-story{
+	position: absolute;
+	top: 0;
+	z-index: 5;
+}
+
+.top-story-container {
+	position: relative;
+	width: 100%;
+	height: 610px;
+	;
+}
+
 .column {
 	width: 100%;
 	background-color: white;
@@ -460,6 +473,10 @@ article {
 	height: 241px;
 }
 
+.issues {
+	flex-direction: column;
+}
+
 .issue {
 	width: 170px;
 	height: 227px;
@@ -571,7 +588,6 @@ article {
 	height: 63px;
 }
 
-
 /* MODIFIERS */
 
 .bold {
@@ -659,6 +675,10 @@ article {
 	color: var(--color-red);
 }
 
+.in-depth {
+	word-wrap: break-word;
+}
+
 .author-debate .round-img {
 	right: 10px;
 	top: -5px;
@@ -667,15 +687,54 @@ article {
 	text-decoration: underline;
 	text-decoration-color: var(--color-red);
 }
+.subscribe-wrapper {
+	padding: 40px;
+	width: 80%;
+	overflow-wrap: break-word;
+}
+									
+.subscribe-text {
+	padding: 0;
+	margin-top: 15px;
+	width: 100%;
+	word-wrap: break-word;
+	max-width: 100%;
+}
+.newsletter-content {
+	border: 1px solid var(--lightGray);
+	width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
 	.summary {
 		font-size: 15px;
 	}
 
-	.wrapper {
+		.wrapper {
 		background-color: white;
 	}
+
+
+.top-story{
+	position: relative;
+	z-index: 0;
+}
+
+.top-story-container {
+	display: none;
+}
+
+.subscribe-text {
+	padding: 0 130px 0 10px;
+
+	word-wrap: break-word;
+	max-width: 100%;
+}
+
+.newsletter-text {
+	padding: 0 20px 0 50px;
+	
+}
 
 	.column {
 		border: none;
@@ -687,6 +746,18 @@ article {
 	.no-border {
 		border: none;
 	}
+	.starting-page {
+		width: 191px;
+		height: 189px;
+	}
+	.issues {
+		
+		height: 241px;
+	}
+	.in-depth {
+		font-size: 1.5rem;
+	}
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -698,6 +769,11 @@ article {
 	nav {
 		width: 100%;
 		border-bottom: 2px solid var(--lightBlueGray);
+	}
+
+	.starting-page {
+		width: 191px;
+		height: 300px;
 	}
 
 	.nav-item:hover {
