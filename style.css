@@ -98,6 +98,12 @@ input:focus {
 .header-top {
 	padding: 15px;
 	height: 50px;
+	z-index: 10000;
+}
+
+.sticky {
+	position: sticky;
+	bottom: 0;
 }
 
 .nav-links {
@@ -300,17 +306,28 @@ article {
 	text-transform: uppercase;
 }
 
-.top-story{
+.top-story {
 	position: absolute;
 	top: 0;
 	z-index: 5;
 }
 
+.white-filler {
+	width: 100%;
+	height: auto;
+	min-height: 370px;
+	max-height: 540px;
+}
+
+
+
 .top-story-container {
 	position: relative;
 	width: 100%;
-	height: 610px;
-	;
+}
+
+.top-story-col {
+	top: 20;
 }
 
 .column {
@@ -692,7 +709,7 @@ article {
 	width: 80%;
 	overflow-wrap: break-word;
 }
-									
+
 .subscribe-text {
 	padding: 0;
 	margin-top: 15px;
@@ -704,37 +721,41 @@ article {
 	border: 1px solid var(--lightGray);
 	width: 100%;
 }
+.featured-stories {
+	height: 2200px;
+}
+.opinion-subsec {
+	height: 2200px;
+}
 
 @media only screen and (min-width: 768px) {
 	.summary {
 		font-size: 15px;
 	}
 
-		.wrapper {
+	.wrapper {
 		background-color: white;
 	}
 
+	.top-story {
+		position: relative;
+		z-index: 0;
+	}
 
-.top-story{
-	position: relative;
-	z-index: 0;
-}
+	.top-story-container {
+		display: none;
+	}
 
-.top-story-container {
-	display: none;
-}
+	.subscribe-text {
+		padding: 0 130px 0 10px;
 
-.subscribe-text {
-	padding: 0 130px 0 10px;
+		word-wrap: break-word;
+		max-width: 100%;
+	}
 
-	word-wrap: break-word;
-	max-width: 100%;
-}
-
-.newsletter-text {
-	padding: 0 20px 0 50px;
-	
-}
+	.newsletter-text {
+		padding: 0 20px 0 50px;
+	}
 
 	.column {
 		border: none;
@@ -751,7 +772,6 @@ article {
 		height: 189px;
 	}
 	.issues {
-		
 		height: 241px;
 	}
 	.in-depth {
@@ -849,10 +869,15 @@ article {
 		border-left: 12px solid white;
 	}
 
+	.content-top {
+		
+	}
+
 	.header-top {
 		height: 95px;
 		padding: 20px 10px 15px;
 		justify-content: flex-start;
+		z-index: 10000;
 	}
 
 	#header-bottom {

@@ -13,22 +13,47 @@
 	</head>
 	<body>
 		<style>
-			div {
-				border: 1px solid blue;
-            }
-            
-            .coluna-1 {order: 2;}
-            .coluna-2{order:1}
+			body {
+				color: #fff;
+				font-family: arial;
+				font-weight: bold;
+				font-size: 40px;
+			}
+			.main-container {
+				max-width: 600px;
+				margin: 0 auto;
+				border: solid 10px green;
+				padding: 10px;
+				margin-top: 40px;
+			}
+			.main-container * {
+				padding: 10px;
+				background: #aaa;
+				border: dashed 5px #000;
+			}
+			.main-container * + * {
+				margin-top: 20px;
+			}
+			.main-header {
+				height: 50px;
+				background: #aaa;
+				border-color: red;
+			}
+			.main-content {
+				min-height: 1000px;
+			}
 
+			.main-header {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+			}
 		</style>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 coluna-1">Column 6</div>
-				<div class="col-md-2 coluna-2">Column 2.1</div>
-				<div class="col-md-2 coluna-3">Column 2.2</div>
-                <div class="col-md-2 coluna-4">Column 2.3</div>
-			</div>
-		</div>
+		<main class="main-container">
+			<header class="main-header">HEADER</header>
+			<div class="main-content">MAIN CONTENT</div>
+			<footer class="main-footer">FOOTER</footer>
+		</main>
 	</body>
 </html>
