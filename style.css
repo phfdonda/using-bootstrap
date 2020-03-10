@@ -32,6 +32,19 @@ a:hover {
 	text-decoration: none;
 }
 
+.nav-link {
+	font-size: 1.2rem;
+	font-family: var(--roboto);
+	font-weight: 700;
+	max-width: 135px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.subscribe {
+	height: 26px;
+}
+
 .gray-line {
 	position: relative;
 	height: 1px;
@@ -113,15 +126,6 @@ input:focus {
 	text-transform: capitalize;
 }
 
-.nav-link {
-	font-size: 1.2rem;
-	font-family: var(--roboto);
-	font-weight: 700;
-	max-width: 135px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .brand {
 	width: 131px;
 	height: 20px;
@@ -191,9 +195,6 @@ input:focus {
 	z-index: 2;
 }
 
-.subscribe {
-	height: 26px;
-}
 
 .subscribe:hover {
 	background-color: white;
@@ -229,9 +230,7 @@ input:focus {
 	background-image: url(./resources/chevronRed.svg);
 }
 
-.opinion-title {
-	font-size: 1rem;
-}
+
 
 .news-logo {
 	height: 20px;
@@ -445,9 +444,6 @@ article {
 	margin-left: 75px;
 }
 
-.latest-news a:hover {
-	text-decoration: none;
-}
 
 .cta {
 	height: 161px;
@@ -707,6 +703,11 @@ article {
 .opinion-title:hover {
 	text-decoration: none;
 }
+
+.latest-news a:hover {
+	text-decoration: none;
+}
+
 
 @media only screen and (min-width: 768px) {
 	.summary {
