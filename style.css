@@ -33,8 +33,8 @@ a:hover {
 
 .opinion-title {
 	font-size: 1rem;
+	line-height: 1.2rem;
 }
-
 
 .nav-link {
 	font-size: 1.2rem;
@@ -85,7 +85,6 @@ a:hover {
 .subscribe {
 	height: 26px;
 }
-
 
 .navbar-nav {
 	max-height: 46px;
@@ -367,10 +366,6 @@ article {
 
 .opinion {
 	width: 100%;
-}
-
-.opinion-title {
-	line-height: 1.2rem;
 }
 
 .debate-pink .article-body {
