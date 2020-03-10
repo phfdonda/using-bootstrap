@@ -5,7 +5,7 @@
 	--lightGray: #d9d9d9;
 	--lightBlueGray: #f4f5f6;
 	--mediumGray: rgba(3, 3, 3, 0.4);
-	--darkGray: #555555;
+	--darkGray: #555;
 	--blackGray: #333;
 	--gray: rgb(85, 85, 85);
 }
@@ -682,10 +682,12 @@ article {
 	right: 10px;
 	top: -5px;
 }
+
 .und-red-on-hover:hover {
 	text-decoration: underline;
 	text-decoration-color: var(--color-red);
 }
+
 .subscribe-wrapper {
 	padding: 40px;
 	width: 80%;
@@ -699,6 +701,7 @@ article {
 	word-wrap: break-word;
 	max-width: 100%;
 }
+
 .newsletter-content {
 	border: 1px solid var(--lightGray);
 	width: 100%;
@@ -724,7 +727,6 @@ article {
 
 	.subscribe-text {
 		padding: 0 130px 0 10px;
-
 		word-wrap: break-word;
 		max-width: 100%;
 	}
