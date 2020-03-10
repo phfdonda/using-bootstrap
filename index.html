@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lora&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+			crossorigin="anonymous"
+		/>
+		<title>Newsweek</title>
+	</head>
+
+	<body>
+		<div class="wrapper position-relative d-block">
+			<!-- @navbar -->
+			<div
+				class="header-top container-fluid mx-auto sticky-top bg-red justify-space-between row"
+			>
+				<!-- Date -->
+				<div
+					class="date white roboto not-bold align-self-end col-lg-3 d-lg-block"
+				>
+					Wed, Feb 19, 2020
+				</div>
+				<!-- Logo -->
+				<div
+					class="logo-wrapper d-flex pl-0 justify-content-lg-center col-4 col-lg-6"
+				>
+					<a href="#" class="brand relative"
+						><img class="logo " src="./resources/newsweek-vector-logo.svg" alt="#"
+					/></a>
+				</div>
+				<!-- @right-buttons-nav-->
+				<div
+					class="right-buttons-nav title black d-flex align-self-end justify-content-end col-8 col-lg-3"
+				>
+					<!-- Sign In -->
+					<a href="" class="sign-in mr-1 white white-on-hover relative">Sign In</a>
+					<!-- Subscribe -->
+					<a href="" class="subscribe red red-on-hover bg-white relative"
+						>Subscribe
+						<span class="arrow a-red align-self-center ml-2"></span>
+					</a>
+					<!-- Hamburger Button -->
+					<button
+						class="navbar-toggler d-lg-none"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarCollapse"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"> </span>
+					</button>
+				</div>
+			</div>
+			<!-- @header-bottom -->
+			<nav
+				id="header-bottom"
+				class="navbar d-lg-sticky py-2 px-0 navbar-expand-lg "
+			>
+				<!-- @nav-link -->
+				<div
+					class="nav-links collapse navbar-collapse ml-auto"
+					id="navbarCollapse"
+				>
+					<form class="search-bar order-lg-2" action="#">
+						<input id="search" placeholder="Search" type="search" name="#" />
+						<label
+							class="search-icon align-self-center"
+							
+							for="search"
+						></label>
+					</form>
+
+					<div
+						class="navbar-nav bg-white justify-content-between mt-lg-0 col-10 d-flex "
+					>
+						<div class="nav-item capital d-flex">
+							<a href="#" class="nav-link black">U.S.</a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital d-flex">
+							<a href="#" class="nav-link black">World </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital d-flex">
+							<a href="#" class="nav-link black">Business </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital d-flex">
+							<a href="#" class="nav-link black">Tech & Science </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital d-flex">
+							<a href="#" class="nav-link black">Culture </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">Newsgeek </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">Sports </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">Health </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">The Debate </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">Vantage </a>
+						</div>
+						<span class="divisor"></span>
+						<div class="nav-item capital  d-flex">
+							<a href="#" class="nav-link black">Weather</a>
+						</div>
+						<span class="divisor d-lg-none"></span>
+					</div>
+				</div>
+			</nav>
+
+			<!-- @Content -->
+			<div class="content-top">
+				<div class="row position-relative ">
+					<!-- @Featured Stories -->
+					<div class="top-story-container d-md-none bg-white p-0 m-0 sticky"></div>
+					<section class="column col-12 col-md-5 col-lg-4">
+						<h5 class="section-name mdGray">Featured Stories</h5>
+						<article class="">
+							<figure class="article-img-wrapper relative">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/women-piazza-del-duomo-milan-feb-2020.webp"
+										alt="Harvey convicted"
+									/>
+									<span class="in- tag red">News</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#"
+									><h5 class="title black und-red-on-hover">
+										Coronavirus Italy Update: Europe's First Major Outbreak Sees
+										Fourth Death
+									</h5></a
+								>
+								<p class="summary">
+									More than 50,000 residents in the northern Italian regions of
+									Lombardy and Veneto are on lockdown.
+								</p>
+							</div>
+						</article>
+						<article class="">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/donald-trump-emergency-funds-coronavirus-congress.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">U.S.</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Here's How Trump Admin Plans to Spend $2.5 Billion to Fight
+										Coronavirus
+									</h5>
+								</a>
+								<p class="summary">
+									Amid growing global fear of the virus, President Donald Trump
+									declared at a press conference in India on Tuesday that the
+									United States was prepared to protect itself and dismissed
+									criticism from Democrats as "automatic."
+								</p>
+							</div>
+						</article>
+						<article class="">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/mubarak-cage.webp"
+										alt="#"
+									/>
+									<span class="in- tag red">News</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Hosni Mubarak, Egyptian President Brought Down by Arab
+										Spring, Dead at 91
+									</h5>
+								</a>
+								<p class="summary">
+									The 91-year-old was put on trial for murders and corruption by
+									his democratically elected successors, but came to enjoy a
+									lucrative retirement in his final years under Egypt's current
+									autocratic rulers.
+								</p>
+							</div>
+						</article>
+						<article class="">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/us-pentagon-icbm-nuclear-weapons-drill-russia.webp"
+										alt="#"
+									/>
+									<span class="in- tag red">World</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										US, Pentagon, ICBM, nuclear, weapons, drill, Russia Russian
+										Politicians Condemn 'Sick' Pentagon After Nuclear Drill
+									</h5>
+								</a>
+								<p class="summary">
+									Last week, the Pentagon ran a simulation of a "limited"
+									nuclear exchange between the U.S. and Russia.
+								</p>
+							</div>
+						</article>
+						<article class="">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/family-separation.webp"
+										alt="#"
+									/>
+									<span class="in- tag red ">U.S.</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Trump Admin Owes Migrant Families Separated at Border
+										Reparations: Doctor
+									</h5>
+								</a>
+								<p class="summary">
+									"It's a sobering realization to note that this is something
+									that is clearly a violation of international human rights law
+									and it's happening in the United States," said Dr. Ranit
+									Mishori.
+								</p>
+							</div>
+						</article>
+						<article class="end-of-section d-lg-none  py-2">
+							<a href="#">
+								<h5 class="title black red-on-hover title-sml">
+									Father and Daughter 'Ripped Apart' After Teen Forced to Return
+									to Mexico
+								</h5>
+							</a>
+						</article>
+					</section>
+					<section class="column col-12 col-md-7 col-lg-5 top-story-col position-static">
+						<!-- @Top Story -->
+						<div class="top-story">
+							<h5 class="section-name mdGray">Top Story</h5>
+							<article class="">
+								<figure class="article-img-wrapper">
+									<a href="#">
+										<img
+											class="article-img"
+											src="./resources/harvey-weinstein.webp"
+											alt="Harvey convicted"
+										/>
+										<span class="in- tag red">U.S.</span>
+									</a>
+								</figure>
+								<div class="article-body">
+									<a href="#">
+										<h5 class="title black und-red-on-hover">
+											Harvey Weinstein Convicted on Two Counts in Sexual Assault
+											Case
+										</h5>
+									</a>
+									<p class="summary">
+										The disgraced movie producer was found guilty of rape and a
+										felony sex crime but was acquitted of other charges,
+										including predatory sexual assault.
+									</p>
+								</div>
+							</article>
+
+							<article class="pd-0 sml-article d-sm-none py-2">
+								<a href="#"
+									><img
+										src="./resources/chinese-children.webp"
+										alt="Chinese Children"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title und-red-on-hover black title-sml">
+										Coronavirus Is 'Threatening the Future of Globalization,'
+										Economist Says
+									</h5>
+								</a>
+								<p class="summary">
+									Imports to Korea from China have had the biggest fall since
+									the Asia financial crisis in 1999, with China's GDP set to
+									plummet this year.
+								</p>
+							</article>
+						</div>
+						<!-- @Culture & Travel -->
+						<section class="column culture-travel">
+							<h5 class="section-name mdGray">Culture & Travel</h5>
+							<article class=" ">
+								<figure class="article-img-wrapper">
+									<a href="#">
+										<img
+											class="article-img"
+											src="./resources/gyeongbokgung-palace-seoul-south-korea-feb-2020.webp"
+											alt="#"
+										/>
+										<span class="in- tag">News</span></a
+									>
+								</figure>
+								<div class="article-body">
+									<a href="#">
+										<h5 class="title">
+											Coronavirus Update as Death Toll Over 2,700 Worldwide
+										</h5>
+									</a>
+									<p class="summary">
+										The U.S. Centers for Disease Control and Prevention has
+										warned Americans to prepare for an outbreak, as new cases
+										are confirmed across Europe.
+									</p>
+								</div>
+							</article>
+							<article class=" ">
+								<figure class="article-img-wrapper">
+									<a href="#">
+										<img
+											class="article-img"
+											src="./resources/love-blind-netflix.webp"
+											alt="#"
+										/>
+										<span class="in- tag">Netflix</span></a
+									>
+								</figure>
+								<div class="article-body">
+									<a href="#">
+										<h5 class="title">
+											Are the 'Love Is Blind' Couples Still Together? An
+											Investigation
+										</h5>
+									</a>
+									<p class="summary">
+										The U.S. Centers for Disease Control and Prevention has
+										warned Americans to prepare for an outbreak, as new cases
+										are confirmed across Europe.
+									</p>
+								</div>
+							</article>
+							<article class=" ">
+								<figure class="article-img-wrapper">
+									<a href="#">
+										<img
+											class="article-img"
+											src="./resources/cul-map-bookstores-banner.webp"
+											alt="#"
+										/>
+										<span class="in- tag">Travel</span></a
+									>
+								</figure>
+								<div class="article-body">
+									<a href="#">
+										<h5 class="title">
+											8 Novel Bookstores Worth Visiting Around the World
+										</h5>
+									</a>
+									<p class="summary">
+										Cozy up and plot your next getaway at these unique
+										bookstores around the world.
+									</p>
+								</div>
+							</article>
+						</section>
+						<!-- @More Stories -->
+						<section class="column more-stories">
+							<h5 class="section-name mdGray">More Stories</h5>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/democratic-debate-south-carolina-2020-election.webp"
+										alt="Billionaire Candidates"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Majority Of Democrats Say Billionaire Candidates Are
+										'Hurting' 2020 Race
+									</h5>
+								</a>
+								<p class="summary">
+									Both former New York City Mayor Mike Bloomberg and
+									philanthropist Tom Steyer have defended their heavy spending.
+								</p>
+							</article>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/sen-elizabeth-warren-bernie-sanders.webp"
+										alt="Elizabeth Warren"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Elizabeth Warren Suggests Bernie Sanders Wants to Change
+										Primary Rules
+									</h5>
+								</a>
+								<p class="summary">
+									The Massachusetts senator also told the audience at her CNN
+									town hall that she was willing to contest the Democratic
+									convention if she was behind on delegates.
+								</p>
+							</article>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/vice-president-mike-pence-trump.webp"
+										alt="Vice president"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Alexandria Ocasio-Cortez Mike Pence's Coronavirus Role
+									</h5>
+								</a>
+								<p class="summary">
+									The New York representative was among many who criticised the
+									appointment of the vice president to the task force tackling
+									the outbreak.
+								</p>
+							</article>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/coronavirus-covid-19-italy-turin-getty.webp"
+										alt="Man in mask"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										U.S. Coronavirus Patient in California Wasn't Tested for
+										COVID-19 for Days
+									</h5>
+								</a>
+								<p class="summary">
+									Over 2,800 people have died of COVID-19 in over 82,000 cases
+									worldwide.
+								</p>
+							</article>
+							<article class="pd-0 sml-article  py-2">
+								<a href="#"
+									><img
+										src="./resources/coronavirus-stock-markets-recession-economy-china-crisis.webp"
+										alt="Stock Market"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Coronavirus Sparks Talk of Global Recession as Stock Markets
+										Dive
+									</h5>
+								</a>
+								<p class="summary">
+									One economist warned that if the coronavirus becomes a
+									pandemic, the world could face a recession as deep as the one
+									during the 2008 financial crisis.
+								</p>
+							</article>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/idlib-syria-russia-us-turkey-ceasefire.webp"
+										alt="Vice president"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										U.S. Demand for Syria Cease-Fire Ignored by Turkey and
+										Russia
+									</h5>
+								</a>
+								<p class="summary">
+									Syrian regime forces are pushing into the northwestern region
+									of Idlib, the last significant area still under rebel control.
+								</p>
+							</article>
+							<article class="pd-0 sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/bernie-sanders-joe-biden-debate.webp"
+										alt="Bernie Sanders debate"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Hillary Clinton Debate Aide Says Attacking Bernie Sanders on
+										Stage Is Risky
+									</h5>
+								</a>
+								<p class="summary">
+									Robert Barnett said jabs at the Vermont senator could be a
+									"detriment" to the Democratic Party's 2020 ticket.
+								</p>
+							</article>
+							<article class="sml-article py-2">
+								<a href="#"
+									><img
+										src="./resources/roger-stone-donald-trump-jury-foreperson.webp"
+										alt="Roger Stone"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Trump Is 'Attacking Every American' by Criticizing Stone
+										Foreperson: Juror
+									</h5>
+								</a>
+								<p class="summary">
+									Seth Cousins rejected suggestions that foreperson Tomeka Hart
+									was biased against the president and Roger Stone.
+								</p>
+							</article>
+							<article class="sml-article  py-2">
+								<a href="#"
+									><img
+										src="./resources/abortion-winning-political-issue-democrats-republicans-election.webp"
+										alt="Protest"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Failed Anti-Abortion Bills Seen as Winning Political Issue
+										by Both Parties
+									</h5>
+								</a>
+								<p class="summary">
+									The Senate failed to muster enough support to pass two bills
+									meant to restrict access to abortions and criminally punish
+									some doctors who perform the procedure.
+								</p>
+							</article>
+							<article class="sml-article  py-2">
+								<a href="#"
+									><img
+										src="./resources/bernie-sanders.webp"
+										alt="Bernie Sanders"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Sanders Claims 'Every Study' Shows Medicare for All Will
+										Save Money
+									</h5>
+								</a>
+								<p class="summary">
+									Critics have argued that a recent study that Senator Bernie
+									Sanders' campaign is relying on depends upon "unrealistic"
+									assumptions.
+								</p>
+							</article>
+							<article class="sml-article  py-2">
+								<a href="#"
+									><img
+										src="./resources/abortion-winning-political-issue-democrats-republicans-election.webp"
+										alt="Protest"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Failed Anti-Abortion Bills Seen as Winning Political Issue
+										by Both Parties
+									</h5>
+								</a>
+								<p class="summary">
+									The Senate failed to muster enough support to pass two bills
+									meant to restrict access to abortions and criminally punish
+									some doctors who perform the procedure.
+								</p>
+							</article>
+							<article class="sml-article  py-2">
+								<a href="#"
+									><img
+										src="./resources/supporters-scotlands-period-products-bill.webp"
+										alt="Period Products Free"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black und-red-on-hover title-sml">
+										Scotland Set to Become First Country to Make Period Products
+										Free For All
+									</h5>
+								</a>
+								<p class="summary">
+									The Period Products Bill made it through the first stage of
+									the legislative process with unanimous support, but
+									politicians warn there need to be major amendments if it is to
+									pass into law.
+								</p>
+							</article>
+						</section>
+					</section>
+
+					<!-- @Opinion & Debate & Latest -->
+					<section class="column-3 col-12 col-lg-3 column sticky">
+						<h1 class="d-none">filler</h1>
+						<!-- @Opinion -->
+						<section class="column opinion-subsec ">
+							<h5 class="section-name mdGray">Opinion</h5>
+							<article class="opinion  ">
+								<div class="opinion-img round-img">
+
+									<a href="#"
+										><img
+											src="./resources/robert-reich.webp"
+											alt="Robert Reich"
+										/>
+									</a>
+								</div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+
+										<a href="#" class="title black red-on-hover">
+											Bernie's Plans Are Ambitious. But They Costs Peanuts
+											Compared to Inaction
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY ROBERT REICH</div>
+								</div>
+							</article>
+							<article class="opinion order-md-2 ">
+								<div class="opinion-img round-img">
+									<a href="#"
+										><img
+											src="./resources/hal-donahue.webp"
+											alt="Hal Donahue"/></a
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+										<a class="title black opinion-title red-on-hover" href="#">
+											Is Scouting Worth Saving? Not Under the Boy Scouts of
+											America
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY HAL DONAHUE</div>
+								</div>
+							</article>
+							<article class="opinion order-md-2 ">
+								<div class="opinion-img round-img">
+									<a href="#"
+										><img
+											src="./resources/travis-akers.webp"
+											alt="Travis Akers"/></a
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+										<a class="title black opinion-title red-on-hover" href="#">
+											Jarrid Wilson Supported Me Just Before He Died. Ministers
+											Need Ministry Too
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY TRAVIS AKERS</div>
+								</div>
+							</article>
+							<article class="opinion order-md-2 ">
+								<div class="opinion-img round-img"
+									><a href="#"
+										><img
+											src="./resources/marc-schulman.webp"
+											alt="MARC SCHULMAN"/></a
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+										<a class="title black opinion-title red-on-hover" href="#">
+											Netanyahu's 'Mr. Security' Persona May Be Crumbling
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY MARC SCHULMAN</div>
+								</div>
+							</article>
+							<article class="opinion order-md">
+								<div class="opinion-img round-img"
+									><a href="#"
+										><img
+											src="./resources/bonnie-kristian.webp"
+											alt="BONNIE KRISTIAN"/></a
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+										<a class="title black opinion-title red-on-hover" href="#">
+											'European Solutions' to European Problems Would Benefit
+											the U.S. Too
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY BONNIE KRISTIAN</div>
+								</div>
+							</article>
+							<article class="opinion order-md-2 ">
+								<div class="opinion-img round-img"
+									><a href="#"
+										><img src="./resources/rand-paul.webp" alt="RAND PAUL"/></a
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+										<a class="title black opinion-title red-on-hover" href="#">
+											End the Afghanistan War and Bring Our Soldiers Home
+										</a>
+									</h2>
+									<div class="author gray bold upper roboto">BY RAND PAUL</div>
+								</div>
+							</article>
+						</section>
+
+						<!-- @The Debate -->
+						<section class="column the-debate">
+							<h5 class="section-name mdGray">The Debate</h5>
+							<article class="debate-pink ">
+								<div class="article-body">
+									<span class="article-img-sml"
+										><a href="#">
+											<img
+												src="./resources/nancy-pelosi-state-union.webp"
+												alt="Nancy Pelosi"
+											/> </a
+									></span>
+									<a href="#" class="no-decoration">
+										<h5 class="title black title-sml capitalize">
+											<span>
+												Coronavirus Is 'Threatening the Future of
+												Globalization,' Economist Says
+											</span>
+										</h5>
+									</a>
+								</div>
+								<div class="author-debate relative">
+									<div class="gray-line"></div>
+									<div class="gray-line mb-2"></div>
+									<span class="round-img opinion-img">
+										<img
+											src="./resources/robert-reich.webp"
+											alt="Robert Reich"
+										/>
+									</span>
+									<span class="author roboto gray"
+										>BY<span class="bold black"> BENNY JOHNSON</span>
+									</span>
+								</div>
+							</article>
+							<div class="debate-vs d-flex">
+								<span class="vs-img d-flex round-img"
+									><span class="vs roboto bold">VS</span></span
+								>
+							</div>
+							<article class="debate-blue ">
+								<div class="article-body">
+									<span class="article-img-sml"
+										><a href="#">
+											<img
+												src="./resources/doctors-medicare-all.webp"
+												alt="Doctors for all"
+											/> </a
+									></span>
+									<a href="#" class="no-decoration">
+										<h5 class="title black title-sml">
+											<span>
+												Doctors Who Support Medicare for All Should Be Careful
+												What They Wish For
+											</span>
+										</h5>
+									</a>
+								</div>
+								<div class="author-debate relative">
+									<div class="gray-line"></div>
+									<div class="gray-line mb-2"></div>
+									<span class="round-img opinion-img">
+										<img
+											src="./resources/sally-pipes.webp"
+											alt="SALLY C. PIPES"
+										/>
+									</span>
+									<span class="author roboto gray"
+										>BY<span class="bold black"> SALLY C. PIPES</span>
+									</span>
+								</div>
+							</article>
+						</section>
+
+						<!-- @Latest News-->
+						<section class="column latest-news">
+							<h5 class="section-name mdGray">Latest News</h5>
+							<article class="sml-article">
+								<a href="#"
+									><img
+										src="./resources/cul-kiss-banner.webp"
+										alt="Kiss"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black title-sml red-on-hover">
+										It Costs $4,000 to go Backstage with KISS
+									</h5>
+								</a>
+							</article>
+							<article class="sml-article  py-1">
+								<a href="#"
+									><img
+										src="./resources/i-am-not-okay-this-ending.webp"
+										alt="Man Following Sydney"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black title-sml red-on-hover">
+										'I Am Not Okay With This' Ending Explained: Who's the Man
+										Following Sydney?
+									</h5>
+								</a>
+							</article>
+							<article class="sml-article  py-1">
+								<a href="#"
+									><img
+										src="./resources/coffee-istock.webp"
+										alt="Coffee"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black title-sml red-on-hover">
+										How to Get Unlimited Coffee for $8.99 at Panera Bread
+									</h5>
+								</a>
+							</article>
+							<article class="sml-article  py-1">
+								<a href="#"
+									><img
+										src="./resources/dunkin-snackin-bacon.webp"
+										alt="Dunkin Donuts"
+										class="article-img-sml"
+								/></a>
+								<a href="#">
+									<h5 class="title black title-sml red-on-hover">
+										Dunkin' Donuts Launches 'Snackin' Bacon' After Adding Matcha
+										Latte to Menu
+									</h5>
+								</a>
+							</article>
+							<article class="sml-article py-1">
+								<a href="#"
+									><img
+										src="./resources/russia-idlib-syria-assault-doctors-hospital-msf.webp"
+										alt="overwhelmed"
+										class="article-img-sml"
+								/></a>
+								<a href="#"
+									><h5 class="title black title-sml red-on-hover">
+										'We Are Overwhelmed': Doctors in Syria's Idlib Are
+										'Powerless,' MSF Says
+									</h5>
+								</a>
+							</article>
+						</section>
+
+						<!-- @CtA -->
+						<section class="column">
+							<div class="cta mx-auto">
+								<div class="n-title d-flex mb-2">
+									<img
+										src="./resources/logo-n1.svg"
+										alt="n-logo"
+										class="n-logo d-flex bg-red mr-2"
+									/>
+									<h5 class="title title-md blackGray upper">
+										Sign up for our Newsletter
+									</h5>
+								</div>
+								<a
+									href=""
+									class="sign-up title title-md upper white white-on-hover p-2 "
+									>Sign up
+									<span class="arrow a-gray align-self-center"></span>
+								</a>
+								<a href="#" class="no-decoration"
+									><div class="mt-3 blackGray bold roboto ">
+										Update your preferences >>
+									</div>
+								</a>
+							</div>
+						</section>
+					</section>
+				</div>
+				<!-- @Other Content-->
+				<div>
+					<!-- @In the Magazine-->
+					<section class="column row in-the-magazine justify-content-center">
+						<h5
+							class="section-name d-flex justify-content-center blackGray d-block col-12"
+						>
+							<img
+								src="./resources/logo-n1.svg"
+								alt="n-logo"
+								class="n-logo bg-red mr-2"
+								
+							/>In the Magazine
+						</h5>
+						<article class=" col-md-3 ">
+							<h2 class="d-none">filler</h2>
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/march-06-2020-cover.webp"
+										alt="#"
+									/>
+									<span class="in- tag red">March 06 ISSUE</span></a
+								>
+							</figure>
+
+							<div class="see-features text-center">
+								<a href="" class="title title-md upper black  black-on-hover"
+									>See all features
+									<span class="arrow a-black align-self-center"></span>
+								</a>
+							</div>
+						</article>
+
+						<article class=" col-md-3 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/fea-growth-01.webp"
+										alt="#"
+										/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>COVER</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>World</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									Growth Can Be Green. Here's How
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/new-york-city-manhattanhenge-rising-waiters.webp"
+										alt="#"
+									/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>features</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>news</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									Five Cities Vulnerable To Rising Seas, Including Miami and New
+									York
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/fe-presidential-names-01.webp"
+										alt="#"
+									/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>features</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>politics</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									Reagan Is Beating Obama in the Race To Name Things After
+									Former Presidents
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										alt="#"
+										src="./resources/per-passwords-02.webp"
+									/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>periscope</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>culture</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									7 Tips to Create a Hack-Proof Password You'll Actually
+									Remember
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										alt="#"
+										src="./resources/cul-books-01-578945297-banner.webp"
+									/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>downtime</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>culture</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									40 Must-Read Fiction and Nonfiction Books to Savor This Spring
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										alt="#"
+										src="./resources/cul-ps-ivovanhove-banner.webp"
+									/>
+								</a>
+								<div class="bottom-tags position-relative d-flex">
+									<span
+										class="out- tag bg-red white upper p-1 ml-0 align-self-center"
+										>downtime</span
+									><span
+										class="out- tag upper bg-white align-self-center red ml-2"
+										>culture</span
+									>
+								</div>
+								<h5 class="title title-sml black und-red-on-hover">
+									West Side Story Returns to Broadway Like Never Before
+								</h5>
+							</figure>
+						</article>
+						<article class=" col-md-3">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										alt="#"
+										src="./resources/fighting-back.webp"
+									/>
+									<span class="in- tag bg-red white">News</span>
+								</a>
+							</figure>
+							<h5 class="title title-sml black und-red-on-hover">
+								Fighting Back
+							</h5>
+						</article>
+					</section>
+					<!-- @Editor's Pick -->
+					<section class="column row editors-pick justify-content-center">
+						<h5
+							class="section-name d-flex justify-content-center blackGray d-block col-12"
+						>
+							<img
+								src="./resources/logo-n1.svg"
+								alt="n-logo"
+								class="n-logo bg-red mr-2"
+							/>Editor's Pick
+						</h5>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/western-pond-turtle.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">Tech & Science</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Trump Administration Sued for Failing to Protect 241
+										Vulnerable Species
+									</h5>
+								</a>
+								<p class="summary">
+									"The extinction crisis gets worse by the day, but Trump
+									officials are twiddling their thumbs as plants and animals
+									fade away," said Noah Greenwald from the Center for Biological
+									Diversity.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/prince-harry-bon-jovi.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">News</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Prince Harry Joins Bon Jovi in the Studio After Striking Out
+										on His Own
+									</h5>
+								</a>
+								<p class="summary">
+									He teased a special project he's working on with the singer
+									for his Invictus Games in an Instagram post.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/biggest-explosion-universe.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">Tech & Science</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Astronomers Spot Biggest Explosion in Universe Since Big
+										Bang
+									</h5>
+								</a>
+								<p class="summary">
+									"We've seen outbursts in the centers of galaxies before, but
+									this one is really, really massive," researcher Melanie
+									Johnston-Hollitt said.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/great-mosque-mecca-saudi-arabia-2005.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">News</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Saudi Arabia Suspends Travel to Mecca and Medina Over
+										Coronavirus Fears
+									</h5>
+								</a>
+								<p class="summary">
+									The move is the latest drastic precautionary measure taken by
+									countries in the Middle East in a bid to curb the spread of
+									the deadly virus.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/john-tenniel-google-doodle.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">u.s.</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Sir John Tenniel: Google Doodle Honors 'Alice in Wonderland'
+										Illustrator
+									</h5>
+								</a>
+								<p class="summary">
+									Sir John Tenniel brought Lewis Carroll characters like Alice
+									and the Cheshire Cat to life in "Alice in Wonderland."
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/donald-trump-michael-bloomberg.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">u.s.</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Mike Bloomberg's Height Might Actually Hurt His Election
+										Chances, History Shows
+									</h5>
+								</a>
+								<p class="summary">
+									President Donald Trump is seven inches taller than the former
+									New York mayor he frequently disparages.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/plague-inc.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">Tech & Science</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Plague Inc. Disappears from China App Store for Having
+										'Illegal Content'
+									</h5>
+								</a>
+								<p class="summary">
+									"It's not clear if this removal is linked to the ongoing
+									coronavirus outbreak that China is facing. However, Plague
+									Inc.'s educational importance has been repeatedly recognised,"
+									the team said.
+								</p>
+							</div>
+						</article>
+						<article class="col-md-3 col-lg-6">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/elizabeth-warren-donald-trump-coronavirus-racist-wall.webp"
+										alt="Donald Trump Corona"
+									/>
+									<span class="in- tag red">Politics</span></a
+								>
+							</figure>
+							<div class="article-body">
+								<a href="#">
+									<h5 class="title black und-red-on-hover">
+										Warren Wants to Use Money for Trump's 'Racist' Wall to Fight
+										Coronavirus
+									</h5>
+								</a>
+								<p class="summary">
+									The presidential hopeful said the Trump administration's
+									response to the crisis is "all about politics."
+								</p>
+							</div>
+						</article>
+					</section>
+					<!-- @Slideshows-->
+					<section class="column row feature-slideshows justify-content-center">
+						<h5
+							class="section-name d-flex justify-content-center blackGray d-block col-12"
+						>
+							<img
+								src="./resources/logo-n1.svg"
+								alt="n-logo"
+								class="n-logo bg-red mr-2"
+							/>Featured Slideshows
+						</h5>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/tozeur-tunisia.webp"
+										alt="Star Wars sets"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">11</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										Relive the 'Star Wars' Saga at These Filming Locations
+									</h5>
+								</a>
+							</div>
+						</article>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/eyjafjallajokull-iceland.webp"
+										alt="Star Wars sets"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">18</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										Active Volcanoes Around the World That Could Erupt at Any
+										Moment
+									</h5>
+								</a>
+							</div>
+						</article>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/lipschutz-living-room-hotel-chelsea.webp"
+										alt="Star Wars sets"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">22</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										Inside the Last Bohemian Apartments of the Storied Hotel
+										Chelsea
+									</h5>
+								</a>
+							</div>
+						</article>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/muir-pass-great-alone.webp"
+										alt="Star Wars sets"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">7</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										The Great Alone: Walking the Pacific Crest Trail
+									</h5>
+								</a>
+							</div>
+						</article>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/galapagos-cerro-brujo.webp"
+										alt="Galapagos"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">4</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										Cruise the Galapagos While Conserving Wildlife Found Nowhere
+										Else
+									</h5>
+								</a>
+							</div>
+						</article>
+						<article class="col-md-4 ">
+							<figure class="article-img-wrapper">
+								<a href="#">
+									<img
+										class="article-img"
+										src="./resources/still-2-eop.webp"
+										alt="Traffic Mammals"
+									/>
+									<span class="in- tag red slide"
+										><span class="n-slides bold">8</span></span
+									></a
+								>
+							</figure>
+							<div class="article-body mb-5">
+								<a href="#">
+									<h5 class="title title-sml black und-red-on-hover">
+										The New Documentary Trying to Save the Most Trafficked
+										Mammals in the World
+									</h5>
+								</a>
+							</div>
+						</article>
+					</section>
+					<section class="row">
+						<!-- @Categories -->
+						<!-- @U.S-->
+						<div class="row  ">
+							<div class="gray-line"></div>
+							<a href="#" class=" d-block col-12 ">
+								<h5 class="title red pt-4">U.S.</h5>
+							</a>
+							<div class="couple-of-articles col-md-8">
+								<div class="left row">
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/frederick-douglass-high-school.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												School District Apologizes for Racially Insensitive
+												Watermelon Photo Frame
+											</h5>
+										</figure>
+									</article>
+
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/summit.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												Washington Newspaper Delivery Woman Allegedly Shot for
+												Driving Too Slow
+											</h5>
+										</figure>
+									</article>
+								</div>
+							</div>
+							<div class="three-side-articles col-md-4">
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/us-president-donald-trump.webp"
+											alt="Trump and Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Trump Is Making Coronavirus Crisis All 'About Himself,'
+											Says Psychiatrist
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/bernie-sanders-virginia.webp"
+											alt="Bernie Sanders"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Bernie Sanders Overtakes Joe Biden in Fox News Poll For
+											First Time
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article  py-2 py-md-0 ">
+									<a href="#"
+										><img
+											src="./resources/coronavirus-covid-19-what-we-dont-know.webp"
+											alt="What we don't know about Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml mb-0">
+											Coronavirus Was Identified Two Months Ago—What We Still
+											Don't Know
+										</h5>
+									</a>
+								</article>
+							</div>
+						</div>
+						<!-- @World -->
+						<div class="row  ">
+							<div class="gray-line"></div>
+							<a href="#" class=" d-block col-12 ">
+								<h5 class="title red pt-4">World</h5>
+							</a>
+							<div class="couple-of-articles col-md-8">
+								<div class="left row">
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/womens-day-mexico.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												Mexico to Witness 'Day Without Women' As Thousands
+												Expected to Strike
+											</h5>
+										</figure>
+									</article>
+
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/international-womens-day.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												Michelle Obama, Lady Gaga and Others Mark International
+												Women's Day
+											</h5>
+										</figure>
+									</article>
+								</div>
+							</div>
+							<div class="three-side-articles col-md-4">
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/fracking.webp"
+											alt="Trump and Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Putin Targets U.S. Fracking With Oil Price War
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/meghan-markle.webp"
+											alt="Bernie Sanders"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Meghan Markle Surprises British Schoolchildren to
+											Commemorate Women's Day
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article  py-2 py-md-0 ">
+									<a href="#"
+										><img
+											src="./resources/coronavirus-covid19-italy-rome-coliseum-getty.webp"
+											alt="What we don't know about Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml mb-0">
+											Covid-19 Update: Over 106,000 Cases as 16 Million Italians
+											on Lockdown
+										</h5>
+									</a>
+								</article>
+							</div>
+						</div>
+						<!-- @Culture -->
+						<div class="row  ">
+							<div class="gray-line"></div>
+							<a href="#" class=" d-block col-12 ">
+								<h5 class="title red pt-4">Culture</h5>
+							</a>
+							<div class="couple-of-articles col-md-8">
+								<div class="left row">
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/altered-carbon-season-2-ending-explained.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												'Altered Carbon' Season 2 Ending Explained: What
+												Happened at The End?
+											</h5>
+										</figure>
+									</article>
+
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/legion-superheroes.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												The Legion of Superheroes Just Turned 62 So Where's Its
+												Big Movie?
+											</h5>
+										</figure>
+									</article>
+								</div>
+							</div>
+							<div class="three-side-articles col-md-4">
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/cursed-films.webp"
+											alt="Trump and Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Shudder's 'Cursed Films' Explores Scary Movies and Their
+											Scarier Histories
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/rupauls-drag-race-season-12-watch-online.webp"
+											alt="Bernie Sanders"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											'RuPaul's Drag Race' Season 12 Streaming: How To Watch New
+											Season Online
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article  py-2 py-md-0 ">
+									<a href="#"
+										><img
+											src="./resources/tom-lewis-pga-tour.webp"
+											alt="What we don't know about Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml mb-0">
+											Honda Classic 2020: Leaderboard and Second Round Tee Times
+										</h5>
+									</a>
+								</article>
+							</div>
+						</div>
+
+						<!-- @Sports -->
+						<div class="row  ">
+							<div class="gray-line"></div>
+							<a href="#" class=" d-block col-12 ">
+								<h5 class="title red pt-4">Sports</h5>
+							</a>
+							<div class="couple-of-articles col-md-8">
+								<div class="left row">
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/sun-yang-china.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												Why Has Chinese Swimmer Sun Yang Been Banned?
+											</h5>
+										</figure>
+									</article>
+
+									<article class="col-md-6 ">
+										<figure class="article-img-wrapper">
+											<a href="#">
+												<img
+													class="article-img mb-2"
+													alt="#"
+													src="./resources/saudi-cup-horse-racing.webp"
+												/>
+											</a>
+											<h5 class="title title-md black und-red-on-hover mb-4">
+												Who Is Maximum Security? All You Need to Know About
+												Saudi Cup Favorite
+											</h5>
+										</figure>
+									</article>
+								</div>
+							</div>
+							<div class="three-side-articles col-md-4">
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/joel-embiid-philadelphia-76ers.webp"
+											alt="Trump and Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Joel Embiid Expected to Be out for a Week with Shoulder
+											Injury
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article py-2 py-md-0">
+									<a href="#"
+										><img
+											src="./resources/lebron-james-anthony-davis-los-angeles-lakers.webp"
+											alt="Bernie Sanders"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml">
+											Are the Lakers the Best Team in the World? JaVale McGee
+											Thinks So
+										</h5>
+									</a>
+								</article>
+								<article class="sml-article  py-2 py-md-0 ">
+									<a href="#"
+										><img
+											src="./resources/tom-lewis-pga-tour.webp"
+											alt="What we don't know about Corona"
+											class="article-img-sml"
+									/></a>
+									<a href="#">
+										<h5 class="title black und-red-on-hover title-sml mb-0">
+											Honda Classic 2020: Leaderboard and Second Round Tee Times
+										</h5>
+									</a>
+								</article>
+							</div>
+						</div>
+					</section>
+					<!-- @Subscribe & Newsletter-->
+					<section class="column subscribe&newsletter row">
+						<div class="subscribe&news-wrapper d-flex row">
+							<!-- @Subscribe -->
+							<div class="subscribe-subsec  bg-lightBlueGray  col-12 col-lg-7">
+								<div class="section-title bg-white">
+									<a href="#">
+										<h5
+											class="title title-sml upper red pt-4 d-block justify-self-start "
+										>
+											Subscribe
+										</h5>
+									</a>
+								</div>
+								<div
+									class="subscribe-wrapper justify-content-center justify-content-md-between align-content-center "
+								>
+									<div class="subscribe-row row">
+										<div class="issues row d-flex position-relative">
+											<div
+												class="last-issues position-relative mx-auto mx-md-0 "
+											>
+												<div class="issue position-absolute last-issue">
+													<a href=""
+														><img
+															src="./resources/february-21-28-2020-cover.webp"
+															alt="February Issue"
+															class="issue"
+													/></a>
+												</div>
+												<div class="issue position-absolute current-issue">
+													<a href=""
+														><img
+															src="./resources/march-06-2020-cover.webp"
+															alt="February Issue"
+															class="issue"
+													/></a>
+												</div>
+											</div>
+											<div
+												class="subscribe-text position-relative text-center text-md-left "
+											>
+												<h5
+													class="in-depth title d-block position-relative title-md black black-on-hover px-5 px-md-0"
+												>
+													In-depth Stories You Don't See Elsewhere About Topics
+													You Want to Read!
+												</h5>
+												<p class="offer-descript  py-2">
+													All Access + Weekly Delivery.<br />
+													Choose A Membership That's Perfect for You!
+												</p>
+												<div
+													class="btn-block d-flex justify-content-center justify-content-md-start ml-2"
+												>
+													<a
+														href=""
+														class="subscribe sub-btn white white-on-hover bg-red bg-red-on-hover p-2"
+														>Subscribe
+														<span
+															class="arrow a-white align-self-center "
+														></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- @Newsletter -->
+							<div class="news-subsec col-12 col-lg-5">
+								<div class="newsletter row">
+									<div class="newsletter-title col-12 d-block">
+										<a href="#">
+											<h5 class="title title-sml upper red pt-4 ">
+												Newsletter
+											</h5>
+										</a>
+									</div>
+									<div class="newsletter-content row">
+										<div class="newsletter-img p-0 col-12 col-md-3 col-lg-6">
+											<div class="starting-page ">
+												<a href=""
+													><img
+														src="./resources/starting5-homepage.png"
+														alt="February Issue"
+														class="starting-page"
+												/></a>
+											</div>
+										</div>
+										<div
+											class="newsletter-text col-12 col-md-9 col-lg-6 justify-content-md-start"
+										>
+											<h5
+												class="in-depth title d-block position-relative title-md black black-on-hover text-center text-md-left px-5 px-md-0 mt-4"
+											>
+												The Starting 5
+											</h5>
+											<p class="offer-descript text-center py-2 text-md-left">
+												Take back your inbox. Sign up for our newsletter and
+												start making sense of the world around you.
+											</p>
+											<div
+												class="btn-block d-flex justify-content-center justify-content-md-start ml-2"
+											>
+												<a
+													href=""
+													class="subscribe sub-btn white white-on-hover bg-red bg-red-on-hover p-2"
+													>Sign Up
+													<span class="arrow a-white align-self-center "></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<footer class="column ml-2 py-5">
+					<div
+						class="footer-top d-flex flex-column flex-md-row justify-content-md-between"
+					>
+						<div class="logo-copyright d-flex flex-column flex-md-row">
+							<a href="#"
+								><img
+									src="./resources/newsweek-vector-logo-red.svg"
+									alt="Logo bottom"
+									class="logo-bottom mr-2 mb-2"
+							/></a>
+
+							<div
+								class="copyright align-self-end justify-items-md-end upper gray mb-2"
+							>
+								© 2020 Newsweek
+							</div>
+						</div>
+
+						<div class="social-wrapper align-self-md-end mb-2 ">
+							<div class="social d-flex">
+								<a class="icon facebook" href="#"></a>
+								<a class="icon twitter" href="#"></a>
+								<a class="icon instagram" href="#"></a>
+								<a class="icon tumblr" href="#"></a>
+								<a class="icon linkedin" href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-bottom row d-flex ">
+						<span class="gray link-sml px-2 my-2 bold no-border"
+							>Editions:</span
+						>
+						<div class="countries d-flex">
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									U.S. Edition
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									日本
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Pakistan
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Polska
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 no-border">
+								<a class="gray black-on-hover" href="#">
+									România
+								</a></span
+							>
+						</div>
+
+						<div class="bottom-links ">
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									About Us
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Corrections
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Contact Us
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Editorial Guidelines
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Advertise
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#"> Copyright </a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#"> Terms & Conditions </a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#"> Privacy Policy</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#"> Cookie Policy </a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Terms of Sale
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#">
+									Archive
+								</a>
+							</span>
+							<span class="link-sml px-2 my-2 sml-link-border">
+								<a class="gray black-on-hover" href="#"> Announcement </a>
+							</span>
+							<span class="link-sml px-2 my-2">
+								<a class="gray black-on-hover" href="#">
+									Consent preferences
+								</a>
+							</span>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
