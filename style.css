@@ -99,7 +99,6 @@ input:focus {
 .header-top {
 	padding: 15px;
 	height: 50px;
-	z-index: 10000;
 }
 
 .sticky {
@@ -306,20 +305,6 @@ article {
 .upper {
 	text-transform: uppercase;
 }
-
-.top-story {
-	position: absolute;
-	top: 0;
-	z-index: 5;
-}
-
-.white-filler {
-	width: 100%;
-	min-height: 30px;
-	max-height: 50px;
-
-}
-
 
 
 .top-story-container {
@@ -870,15 +855,12 @@ article {
 		border-left: 12px solid white;
 	}
 
-	.content-top {
-		
-	}
-
+	
 	.header-top {
 		height: 95px;
 		padding: 20px 10px 15px;
 		justify-content: flex-start;
-		z-index: 10000;
+	
 	}
 
 	#header-bottom {
