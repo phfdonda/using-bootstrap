@@ -3,7 +3,7 @@
  ## This page was created as a clone of the Newsweek homepage, for the Microverse's HTML and CSS course curriculum. The original can be seen [clicking here](https://www.newsweek.com/).
 
 
-![Screenshot(./resources/Screenshot.jpg))
+![Screenshot](./resources/Screenshot.jpg)
 
   ### AUTHOR - Pedro Henrique Ferreira Donda
     GitHub: https://github.com/phfdonda
