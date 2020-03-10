@@ -741,17 +741,21 @@ article {
 
   .sml-link-border {
     border-right: 1px solid var(--lightGray);
-  }
+	}
+	
   .no-border {
     border: none;
-  }
+	}
+	
   .starting-page {
     width: 191px;
     height: 189px;
-  }
+	}
+	
   .issues {
     height: 241px;
-  }
+	}
+	
   .in-depth {
     font-size: 1.5rem;
   }
@@ -841,7 +845,7 @@ article {
     width: 78px;
     display: block;
     bottom: -13px;
-    right: 0px;
+    right: 0;
     border-top: 13px solid var(--color-red);
     border-left: 12px solid white;
   }
