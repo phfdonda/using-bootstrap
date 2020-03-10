@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -37,8 +39,6 @@
 			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
 			crossorigin="anonymous"
 		/>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Newsweek</title>
 	</head>
 
@@ -59,7 +59,7 @@
 					class="logo-wrapper d-flex pl-0 justify-content-lg-center col-4 col-lg-6"
 				>
 					<a href="#" class="brand"
-						><img class="logo " src="./resources/newsweek-vector-logo.svg"
+						><img class="logo " src="./resources/newsweek-vector-logo.svg" alt="#"
 					/></a>
 				</div>
 				<!-- @right-buttons-nav-->
@@ -82,7 +82,7 @@
 						aria-expanded="false"
 						aria-label="Toggle navigation"
 					>
-						<span class="navbar-toggler-icon" alt="Menu"></span>
+						<span class="navbar-toggler-icon"> </span>
 					</button>
 				</div>
 			</div>
@@ -97,10 +97,10 @@
 					id="navbarCollapse"
 				>
 					<form class="search-bar order-lg-2" action="#">
-						<input id="search" placeholder="Search" type="search" name="" />
+						<input id="search" placeholder="Search" type="search" name="#" />
 						<label
 							class="search-icon align-self-center"
-							placeholder="Search"
+							
 							for="search"
 						></label>
 					</form>
@@ -162,7 +162,7 @@
 					<!-- @Featured Stories -->
 					<div class="top-story-container d-md-none bg-white p-0 m-0 sticky"></div>
 					<section class="column col-12 col-md-5 col-lg-4">
-						<h1 class="section-name mdGray">Featured Stories</h1>
+						<h5 class="section-name mdGray">Featured Stories</h5>
 						<article class="">
 							<figure class="article-img-wrapper">
 								<a href="#">
@@ -219,6 +219,7 @@
 									<img
 										class="article-img"
 										src="./resources/mubarak-cage.webp"
+										alt="#"
 									/>
 									<span class="in- tag red">News</span></a
 								>
@@ -244,6 +245,7 @@
 									<img
 										class="article-img"
 										src="./resources/us-pentagon-icbm-nuclear-weapons-drill-russia.webp"
+										alt="#"
 									/>
 									<span class="in- tag red">World</span></a
 								>
@@ -267,6 +269,7 @@
 									<img
 										class="article-img"
 										src="./resources/family-separation.webp"
+										alt="#"
 									/>
 									<span class="in- tag red ">U.S.</span></a
 								>
@@ -298,7 +301,7 @@
 					<section class="column col-12 col-md-7 col-lg-5 top-story-col position-static">
 						<!-- @Top Story -->
 						<div class="top-story">
-							<h1 class="section-name mdGray">Top Story</h1>
+							<h5 class="section-name mdGray">Top Story</h5>
 							<article class="">
 								<figure class="article-img-wrapper">
 									<a href="#">
@@ -347,13 +350,14 @@
 						</div>
 						<!-- @Culture & Travel -->
 						<section class="column culture-travel">
-							<h1 class="section-name mdGray">Culture & Travel</h1>
+							<h5 class="section-name mdGray">Culture & Travel</h5>
 							<article class=" ">
 								<figure class="article-img-wrapper">
 									<a href="#">
 										<img
 											class="article-img"
 											src="./resources/gyeongbokgung-palace-seoul-south-korea-feb-2020.webp"
+											alt="#"
 										/>
 										<span class="in- tag">News</span></a
 									>
@@ -377,6 +381,7 @@
 										<img
 											class="article-img"
 											src="./resources/love-blind-netflix.webp"
+											alt="#"
 										/>
 										<span class="in- tag">Netflix</span></a
 									>
@@ -401,6 +406,7 @@
 										<img
 											class="article-img"
 											src="./resources/cul-map-bookstores-banner.webp"
+											alt="#"
 										/>
 										<span class="in- tag">Travel</span></a
 									>
@@ -420,7 +426,7 @@
 						</section>
 						<!-- @More Stories -->
 						<section class="column more-stories">
-							<h1 class="section-name mdGray">More Stories</h1>
+							<h5 class="section-name mdGray">More Stories</h5>
 							<article class="pd-0 sml-article py-2">
 								<a href="#"
 									><img
@@ -649,114 +655,117 @@
 
 					<!-- @Opinion & Debate & Latest -->
 					<section class="column-3 col-12 col-lg-3 column sticky">
+						<h1 class="d-none">filler</h1>
 						<!-- @Opinion -->
 						<section class="column opinion-subsec ">
-							<h1 class="section-name mdGray">Opinion</h1>
+							<h5 class="section-name mdGray">Opinion</h5>
 							<article class="opinion  ">
-								<span class="opinion-img round-img">
+								<div class="opinion-img round-img">
+
 									<a href="#"
 										><img
 											src="./resources/robert-reich.webp"
 											alt="Robert Reich"
 										/>
 									</a>
-								</span>
-								<span class="opinion-text">
-									<h4>
-										<a href="#" class="title black opinion-title red-on-hover">
+								</div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
+
+										<a href="#" class="title black red-on-hover">
 											Bernie's Plans Are Ambitious. But They Costs Peanuts
 											Compared to Inaction
 										</a>
-									</h4>
-									<span class="author">BY ROBERT REICH</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY ROBERT REICH</div>
+								</div>
 							</article>
 							<article class="opinion order-md-2 ">
-								<span class="opinion-img round-img">
+								<div class="opinion-img round-img">
 									<a href="#"
 										><img
 											src="./resources/hal-donahue.webp"
 											alt="Hal Donahue"/></a
-								></span>
-								<span class="opinion-text">
-									<h4>
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
 										<a class="title black opinion-title red-on-hover" href="#">
 											Is Scouting Worth Saving? Not Under the Boy Scouts of
 											America
 										</a>
-									</h4>
-									<span class="author">BY HAL DONAHUE</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY HAL DONAHUE</div>
+								</div>
 							</article>
 							<article class="opinion order-md-2 ">
-								<span class="opinion-img round-img">
+								<div class="opinion-img round-img">
 									<a href="#"
 										><img
 											src="./resources/travis-akers.webp"
 											alt="Travis Akers"/></a
-								></span>
-								<span class="opinion-text">
-									<h4>
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
 										<a class="title black opinion-title red-on-hover" href="#">
 											Jarrid Wilson Supported Me Just Before He Died. Ministers
 											Need Ministry Too
 										</a>
-									</h4>
-									<span class="author">BY TRAVIS AKERS</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY TRAVIS AKERS</div>
+								</div>
 							</article>
 							<article class="opinion order-md-2 ">
-								<span class="opinion-img round-img"
+								<div class="opinion-img round-img"
 									><a href="#"
 										><img
 											src="./resources/marc-schulman.webp"
 											alt="MARC SCHULMAN"/></a
-								></span>
-								<span class="opinion-text">
-									<h4>
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
 										<a class="title black opinion-title red-on-hover" href="#">
 											Netanyahu's 'Mr. Security' Persona May Be Crumbling
 										</a>
-									</h4>
-									<span class="author">BY MARC SCHULMAN</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY MARC SCHULMAN</div>
+								</div>
 							</article>
 							<article class="opinion order-md">
-								<span class="opinion-img round-img"
+								<div class="opinion-img round-img"
 									><a href="#"
 										><img
 											src="./resources/bonnie-kristian.webp"
 											alt="BONNIE KRISTIAN"/></a
-								></span>
-								<span class="opinion-text">
-									<h4>
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
 										<a class="title black opinion-title red-on-hover" href="#">
 											'European Solutions' to European Problems Would Benefit
 											the U.S. Too
 										</a>
-									</h4>
-									<span class="author">BY BONNIE KRISTIAN</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY BONNIE KRISTIAN</div>
+								</div>
 							</article>
 							<article class="opinion order-md-2 ">
-								<span class="opinion-img round-img"
+								<div class="opinion-img round-img"
 									><a href="#"
 										><img src="./resources/rand-paul.webp" alt="RAND PAUL"/></a
-								></span>
-								<span class="opinion-text">
-									<h4>
+								></div>
+								<div class="opinion-text">
+									<h2 class="opinion-title">
 										<a class="title black opinion-title red-on-hover" href="#">
 											End the Afghanistan War and Bring Our Soldiers Home
 										</a>
-									</h4>
-									<span class="author">BY RAND PAUL</span>
-								</span>
+									</h2>
+									<div class="author gray bold upper roboto">BY RAND PAUL</div>
+								</div>
 							</article>
 						</section>
 
 						<!-- @The Debate -->
 						<section class="column the-debate">
-							<h1 class="section-name mdGray">The Debate</h1>
+							<h5 class="section-name mdGray">The Debate</h5>
 							<article class="debate-pink ">
 								<div class="article-body">
 									<span class="article-img-sml"
@@ -830,7 +839,7 @@
 
 						<!-- @Latest News-->
 						<section class="column latest-news">
-							<h1 class="section-name mdGray">Latest News</h1>
+							<h5 class="section-name mdGray">Latest News</h5>
 							<article class="sml-article">
 								<a href="#"
 									><img
@@ -933,21 +942,24 @@
 				<div>
 					<!-- @In the Magazine-->
 					<section class="column row in-the-magazine justify-content-center">
-						<h1
+						<h5
 							class="section-name d-flex justify-content-center blackGray d-block col-12"
 						>
 							<img
 								src="./resources/logo-n1.svg"
 								alt="n-logo"
 								class="n-logo bg-red mr-2"
+								
 							/>In the Magazine
-						</h1>
+						</h5>
 						<article class=" col-md-3 ">
+							<h2 class="d-none">filler</h2>
 							<figure class="article-img-wrapper">
 								<a href="#">
 									<img
 										class="article-img"
 										src="./resources/march-06-2020-cover.webp"
+										alt="#"
 									/>
 									<span class="in- tag red">March 06 ISSUE</span></a
 								>
@@ -967,7 +979,8 @@
 									<img
 										class="article-img"
 										src="./resources/fea-growth-01.webp"
-									/>
+										alt="#"
+										/>
 								</a>
 								<div class="bottom-tags position-relative d-flex">
 									<span
@@ -989,6 +1002,7 @@
 									<img
 										class="article-img"
 										src="./resources/new-york-city-manhattanhenge-rising-waiters.webp"
+										alt="#"
 									/>
 								</a>
 								<div class="bottom-tags position-relative d-flex">
@@ -1012,6 +1026,7 @@
 									<img
 										class="article-img"
 										src="./resources/fe-presidential-names-01.webp"
+										alt="#"
 									/>
 								</a>
 								<div class="bottom-tags position-relative d-flex">
@@ -1034,6 +1049,7 @@
 								<a href="#">
 									<img
 										class="article-img"
+										alt="#"
 										src="./resources/per-passwords-02.webp"
 									/>
 								</a>
@@ -1057,6 +1073,7 @@
 								<a href="#">
 									<img
 										class="article-img"
+										alt="#"
 										src="./resources/cul-books-01-578945297-banner.webp"
 									/>
 								</a>
@@ -1079,6 +1096,7 @@
 								<a href="#">
 									<img
 										class="article-img"
+										alt="#"
 										src="./resources/cul-ps-ivovanhove-banner.webp"
 									/>
 								</a>
@@ -1101,6 +1119,7 @@
 								<a href="#">
 									<img
 										class="article-img"
+										alt="#"
 										src="./resources/fighting-back.webp"
 									/>
 									<span class="in- tag bg-red white">News</span>
@@ -1113,7 +1132,7 @@
 					</section>
 					<!-- @Editor's Pick -->
 					<section class="column row editors-pick justify-content-center">
-						<h1
+						<h5
 							class="section-name d-flex justify-content-center blackGray d-block col-12"
 						>
 							<img
@@ -1121,7 +1140,7 @@
 								alt="n-logo"
 								class="n-logo bg-red mr-2"
 							/>Editor's Pick
-						</h1>
+						</h5>
 						<article class="col-md-3 col-lg-6">
 							<figure class="article-img-wrapper">
 								<a href="#">
@@ -1323,7 +1342,7 @@
 					</section>
 					<!-- @Slideshows-->
 					<section class="column row feature-slideshows justify-content-center">
-						<h1
+						<h5
 							class="section-name d-flex justify-content-center blackGray d-block col-12"
 						>
 							<img
@@ -1331,7 +1350,7 @@
 								alt="n-logo"
 								class="n-logo bg-red mr-2"
 							/>Featured Slideshows
-						</h1>
+						</h5>
 						<article class="col-md-4 ">
 							<figure class="article-img-wrapper">
 								<a href="#">
@@ -1478,6 +1497,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/frederick-douglass-high-school.webp"
 												/>
 											</a>
@@ -1493,6 +1513,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/summit.webp"
 												/>
 											</a>
@@ -1562,6 +1583,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/womens-day-mexico.webp"
 												/>
 											</a>
@@ -1577,6 +1599,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/international-womens-day.webp"
 												/>
 											</a>
@@ -1645,6 +1668,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/altered-carbon-season-2-ending-explained.webp"
 												/>
 											</a>
@@ -1660,6 +1684,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/legion-superheroes.webp"
 												/>
 											</a>
@@ -1729,6 +1754,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/sun-yang-china.webp"
 												/>
 											</a>
@@ -1743,6 +1769,7 @@
 											<a href="#">
 												<img
 													class="article-img mb-2"
+													alt="#"
 													src="./resources/saudi-cup-horse-racing.webp"
 												/>
 											</a>

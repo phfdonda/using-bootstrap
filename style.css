@@ -364,6 +364,10 @@ article {
 	width: 100%;
 }
 
+.opinion-title {
+	line-height: 1.2rem;
+}
+
 .debate-pink .article-body {
 	border-top: 4px solid #f94859;
 }
