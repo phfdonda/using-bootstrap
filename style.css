@@ -229,13 +229,6 @@ input:focus {
 	background-image: url(./resources/chevronRed.svg);
 }
 
-.sign-in:hover,
-.subscribe:hover,
-.culture-travel a,
-.opinion-title:hover {
-	text-decoration: none;
-}
-
 .opinion-title {
 	font-size: 1rem;
 }
@@ -300,7 +293,7 @@ article {
 	text-transform: uppercase;
 }
 
-.top-story{
+.top-story {
 	position: absolute;
 	top: 0;
 	z-index: 5;
@@ -310,7 +303,6 @@ article {
 	position: relative;
 	width: 100%;
 	height: 610px;
-	;
 }
 
 .column {
@@ -418,7 +410,7 @@ article {
 
 .culture-travel .title {
 	font-weight: 400;
-	font-family: --lora;
+	font-family: "Lora", serif;
 	color: #272727;
 }
 
@@ -696,7 +688,7 @@ article {
 	width: 80%;
 	overflow-wrap: break-word;
 }
-									
+
 .subscribe-text {
 	padding: 0;
 	margin-top: 15px;
@@ -709,37 +701,41 @@ article {
 	width: 100%;
 }
 
+.sign-in:hover,
+.subscribe:hover,
+.culture-travel a,
+.opinion-title:hover {
+	text-decoration: none;
+}
 
 @media only screen and (min-width: 768px) {
 	.summary {
 		font-size: 15px;
 	}
 
-		.wrapper {
+	.wrapper {
 		background-color: white;
 	}
 
+	.top-story {
+		position: relative;
+		z-index: 0;
+	}
 
-.top-story{
-	position: relative;
-	z-index: 0;
-}
+	.top-story-container {
+		display: none;
+	}
 
-.top-story-container {
-	display: none;
-}
+	.subscribe-text {
+		padding: 0 130px 0 10px;
 
-.subscribe-text {
-	padding: 0 130px 0 10px;
+		word-wrap: break-word;
+		max-width: 100%;
+	}
 
-	word-wrap: break-word;
-	max-width: 100%;
-}
-
-.newsletter-text {
-	padding: 0 20px 0 50px;
-	
-}
+	.newsletter-text {
+		padding: 0 20px 0 50px;
+	}
 
 	.column {
 		border: none;
@@ -756,13 +752,11 @@ article {
 		height: 189px;
 	}
 	.issues {
-		
 		height: 241px;
 	}
 	.in-depth {
 		font-size: 1.5rem;
 	}
-
 }
 
 @media only screen and (min-width: 992px) {
