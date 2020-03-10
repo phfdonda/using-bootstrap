@@ -2,7 +2,6 @@
 	--color-red: #f72210;
 	--in-tag: bold 17px/16px "Roboto Condensed", sans-serif;
 	--roboto: "Roboto Condensed", sans-serif;
-	--lora: "Lora", serif;
 	--lightGray: #d9d9d9;
 	--lightBlueGray: #f4f5f6;
 	--mediumGray: rgba(3, 3, 3, 0.4);
@@ -32,6 +31,15 @@ a:hover {
 	text-decoration: none;
 }
 
+.nav-link {
+	font-size: 1.2rem;
+	font-family: var(--roboto);
+	font-weight: 700;
+	max-width: 135px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
 .gray-line {
 	position: relative;
 	height: 1px;
@@ -49,8 +57,12 @@ a:hover {
 	max-width: 1310px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-	padding: 0;
+.subscribe {
+	height: 26px;
+}
+
+.opinion-title {
+	font-size: 1rem;
 }
 
 .navbar-nav {
@@ -68,12 +80,6 @@ a:hover {
 	background-position: center;
 	background-size: 30px 30px;
 	opacity: 0.6;
-}
-
-.navbar-toggler:focus,
-input:focus {
-	outline: none;
-	border: none;
 }
 
 .title,
@@ -113,15 +119,6 @@ input:focus {
 	text-transform: capitalize;
 }
 
-.nav-link {
-	font-size: 1.2rem;
-	font-family: var(--roboto);
-	font-weight: 700;
-	max-width: 135px;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .brand {
 	width: 131px;
 	height: 20px;
@@ -132,6 +129,16 @@ input:focus {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0;
+}
+
+.navbar-toggler:focus,
+input:focus {
+	outline: none;
+	border: none;
 }
 
 .right-buttons-nav {
@@ -191,10 +198,6 @@ input:focus {
 	z-index: 2;
 }
 
-.subscribe {
-	height: 26px;
-}
-
 .subscribe:hover {
 	background-color: white;
 }
@@ -210,8 +213,13 @@ input:focus {
 	background-color: var(--lightBlueGray);
 }
 
-.sign-up:hover {
-	background-color: #999;
+.relative,
+.sign-in,
+.subscribe,
+.brand,
+.article-img-wrapper,
+.author-debate {
+	position: relative;
 }
 
 .sign-in,
@@ -234,10 +242,6 @@ input:focus {
 .culture-travel a,
 .opinion-title:hover {
 	text-decoration: none;
-}
-
-.opinion-title {
-	font-size: 1rem;
 }
 
 .news-logo {
@@ -300,7 +304,7 @@ article {
 	text-transform: uppercase;
 }
 
-.top-story{
+.top-story {
 	position: absolute;
 	top: 0;
 	z-index: 5;
@@ -310,7 +314,6 @@ article {
 	position: relative;
 	width: 100%;
 	height: 610px;
-	;
 }
 
 .column {
@@ -418,7 +421,7 @@ article {
 
 .culture-travel .title {
 	font-weight: 400;
-	font-family: --lora;
+	font-family: "Lora", serif;
 	color: #272727;
 }
 
@@ -455,6 +458,10 @@ article {
 
 .latest-news a:hover {
 	text-decoration: none;
+}
+
+.sign-up:hover {
+	background-color: #999;
 }
 
 .cta {
@@ -654,15 +661,6 @@ article {
 	border: none;
 }
 
-.relative,
-.sign-in,
-.subscribe,
-.brand,
-.article-img-wrapper,
-.author-debate {
-	position: relative;
-}
-
 .white,
 .white-on-hover:hover,
 .nav-item:hover .nav-link {
@@ -696,7 +694,7 @@ article {
 	width: 80%;
 	overflow-wrap: break-word;
 }
-									
+
 .subscribe-text {
 	padding: 0;
 	margin-top: 15px;
@@ -709,37 +707,34 @@ article {
 	width: 100%;
 }
 
-
 @media only screen and (min-width: 768px) {
 	.summary {
 		font-size: 15px;
 	}
 
-		.wrapper {
+	.wrapper {
 		background-color: white;
 	}
 
+	.top-story {
+		position: relative;
+		z-index: 0;
+	}
 
-.top-story{
-	position: relative;
-	z-index: 0;
-}
+	.top-story-container {
+		display: none;
+	}
 
-.top-story-container {
-	display: none;
-}
+	.subscribe-text {
+		padding: 0 130px 0 10px;
 
-.subscribe-text {
-	padding: 0 130px 0 10px;
+		word-wrap: break-word;
+		max-width: 100%;
+	}
 
-	word-wrap: break-word;
-	max-width: 100%;
-}
-
-.newsletter-text {
-	padding: 0 20px 0 50px;
-	
-}
+	.newsletter-text {
+		padding: 0 20px 0 50px;
+	}
 
 	.column {
 		border: none;
@@ -756,13 +751,11 @@ article {
 		height: 189px;
 	}
 	.issues {
-		
 		height: 241px;
 	}
 	.in-depth {
 		font-size: 1.5rem;
 	}
-
 }
 
 @media only screen and (min-width: 992px) {
@@ -797,7 +790,6 @@ article {
 		white-space: nowrap;
 	}
 
-
 	.nav-item:hover {
 		background-color: transparent;
 	}
@@ -805,7 +797,6 @@ article {
 	.nav-item:hover .nav-link {
 		color: var(--color-red);
 	}
-
 
 	#search {
 		width: 84px;
