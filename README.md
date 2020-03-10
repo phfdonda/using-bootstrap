@@ -15,10 +15,10 @@
 
 ### Check it online!
 
-  [Live Preview](#)
+  [Live Preview](https://rawcdn.githack.com/phfdonda/using-bootstrap/7fb811b2ad45b100576de08ceffb6ae39fa645da/index.html)
 
 ### Contributions and issues are welcome!
-For a short guide of the site, you can [click here](markdown.md)
+
 
 License
 This project is MIT licensed.
