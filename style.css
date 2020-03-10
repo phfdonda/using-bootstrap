@@ -704,10 +704,7 @@ article {
 	border: 1px solid var(--lightGray);
 	width: 100%;
 }
-.sticky {
-	position: sticky;
-	top: 0;
-}
+
 
 @media only screen and (min-width: 768px) {
 	.summary {
